@@ -213,7 +213,7 @@
 .timeline::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 10px;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -224,7 +224,7 @@
 .timeline-item {
     margin-bottom: 3rem;
     position: relative;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .timeline-date {
@@ -238,10 +238,10 @@
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -6px;
-    top: 5px;
-    width: 12px;
-    height: 12px;
+    left: 4px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background: var(--accent-primary);
     border: 3px solid var(--bg-primary);
@@ -510,12 +510,14 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    align-self: start;
 }
 
 .right-column {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-self: start;
 }
 
 .card {
@@ -1153,7 +1155,7 @@
 
 /* Certifications Card */
 .certifications-card {
-    max-height: 850px;
+    max-height: 950px;
     overflow: hidden;
 }
 
@@ -1193,7 +1195,7 @@
 }
 
 .scrollable-courses {
-    max-height: 200px;
+    max-height: 300px;
     overflow-y: auto;
     padding-right: 0.5rem;
 }
@@ -1265,12 +1267,13 @@
     background: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 2rem;
+    padding: 1.75rem 1.5rem;
     text-align: center;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 280px;
 }
 
 .resource-card:hover {
@@ -1280,22 +1283,22 @@
 }
 
 .resource-icon-large {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     line-height: 1;
 }
 
 .resource-title {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: var(--text-primary);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     font-weight: 600;
 }
 
 .resource-description {
     color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.5;
     margin-bottom: 1.5rem;
     flex-grow: 1;
 }
