@@ -213,7 +213,7 @@
 .timeline::before {
     content: '';
     position: absolute;
-    left: 10px;
+    left: 8px;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -224,7 +224,7 @@
 .timeline-item {
     margin-bottom: 3rem;
     position: relative;
-    padding-left: 40px;
+    padding-left: 35px;
 }
 
 .timeline-date {
@@ -238,7 +238,7 @@
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: 4px;
+    left: 2px;
     top: 6px;
     width: 14px;
     height: 14px;
@@ -267,15 +267,16 @@
     color: var(--accent-primary);
     margin-bottom: 1rem;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
 .timeline-responsibilities {
     list-style: disc;
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
     margin-bottom: 1rem;
+    margin-left: 0;
 }
 
 .timeline-responsibilities li {
@@ -494,6 +495,13 @@
 
 .languages-list li {
     color: var(--text-secondary);
+}
+
+/* Container for full-width sections */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 3rem 2rem;
 }
 
 /* Two Column Layout */
@@ -1155,8 +1163,8 @@
 
 /* Certifications Card */
 .certifications-card {
-    max-height: 950px;
-    overflow: hidden;
+    max-height: 1050px;
+    overflow: visible;
 }
 
 .cert-section {
@@ -1195,7 +1203,7 @@
 }
 
 .scrollable-courses {
-    max-height: 300px;
+    max-height: 350px;
     overflow-y: auto;
     padding-right: 0.5rem;
 }
@@ -1254,12 +1262,14 @@
 
 .resources-section {
     margin-bottom: 2rem;
+    max-width: 100%;
+    width: 100%;
 }
 
 .resources-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    gap: 1.75rem;
     margin-top: 1.5rem;
 }
 
