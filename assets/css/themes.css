@@ -5,6 +5,7 @@
     --bg-secondary: #f8f9fa;
     --nav-bg: rgba(255, 255, 255, 0.95);
     --card-bg: #ffffff;
+    --card-hover: #f8f9fa;
     --text-primary: #212529;
     --text-secondary: #495057;
     --accent-primary: #0069ff;
@@ -20,6 +21,7 @@
     --bg-secondary: #161b22;
     --nav-bg: rgba(13, 17, 23, 0.95);
     --card-bg: #161b22;
+    --card-hover: #1c2128;
     --text-primary: #e6edf3;
     --text-secondary: #8b949e;
     --accent-primary: #3b96ff;
