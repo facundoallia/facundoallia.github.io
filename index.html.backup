@@ -80,119 +80,10 @@
         </div>
     </section>
 
-    <!-- Main Two-Column Grid Layout -->
-    <div class="main-grid">
-        <!-- Left Column (Sidebar) -->
-        <aside class="left-column">
-            <!-- Contact Card -->
-            <div id="contact" class="card contact-card">
-                <h3 class="card-title" data-en="Contact" data-es="Contacto">Contact</h3>
-                <ul class="contact-list">
-                    <li>
-                        <span class="icon">✉️</span>
-                        <a href="mailto:facujallia@gmail.com">facujallia@gmail.com</a>
-                    </li>
-                    <li>
-                        <span class="icon">💼</span>
-                        <a href="https://www.linkedin.com/in/facundoalliafernandez/" target="_blank">LinkedIn</a>
-                    </li>
-                    <li>
-                        <span class="icon">💻</span>
-                        <a href="https://github.com/facundoallia" target="_blank">GitHub</a>
-                    </li>
-                    <li>
-                        <span class="icon">📝</span>
-                        <a href="https://medium.com/@facujallia" target="_blank">Medium</a>
-                    </li>
-                </ul>
-                <div class="whatsapp-buttons">
-                    <a href="https://api.whatsapp.com/send?phone=543517414245&text=Hola%2C%20" target="_blank" class="whatsapp-btn">
-                        <span>📱</span>
-                        <span data-en="WhatsApp Argentina" data-es="WhatsApp Argentina">WhatsApp Argentina</span>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=34624695706&text=Hola%2C%20" target="_blank" class="whatsapp-btn">
-                        <span>📱</span>
-                        <span data-en="WhatsApp España" data-es="WhatsApp España">WhatsApp España</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Tech Stack Card -->
-            <div class="card">
-                <h3 class="card-title" data-en="Tech Stack" data-es="Stack Tecnológico">Tech Stack</h3>
-                <div class="skill-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">SQL</span>
-                    <span class="tech-tag">R</span>
-                    <span class="tech-tag">PySpark</span>
-                    <span class="tech-tag">Pandas</span>
-                    <span class="tech-tag">NumPy</span>
-                    <span class="tech-tag">TensorFlow</span>
-                    <span class="tech-tag">Scikit-Learn</span>
-                    <span class="tech-tag">AWS</span>
-                    <span class="tech-tag">Azure</span>
-                    <span class="tech-tag">Databricks</span>
-                    <span class="tech-tag">Power BI</span>
-                    <span class="tech-tag">Bloomberg</span>
-                    <span class="tech-tag">Murex</span>
-                </div>
-            </div>
-
-            <!-- Education Card -->
-            <div id="education" class="card">
-                <h3 class="card-title" data-en="Education" data-es="Formación">Education</h3>
-                <div class="education-list">
-                    <div class="education-item">
-                        <h4 data-en="Master's in Finance" data-es="Máster en Finanzas">Master's in Finance</h4>
-                        <p class="education-school">EAE Business School Madrid</p>
-                        <p class="education-year">2024</p>
-                    </div>
-                    <div class="education-item">
-                        <h4 data-en="Postgraduate in Quantitative Finance" data-es="Posgrado en Finanzas Cuantitativas">Postgraduate in Quantitative Finance</h4>
-                        <p class="education-school">UCEMA</p>
-                        <p class="education-year">2022</p>
-                    </div>
-                    <div class="education-item">
-                        <h4 data-en="Data Science Bootcamp (+700h)" data-es="Bootcamp de Ciencia de Datos (+700h)">Data Science Bootcamp (+700h)</h4>
-                        <p class="education-school">Henry</p>
-                        <p class="education-year">2022</p>
-                    </div>
-                    <div class="education-item">
-                        <h4 data-en="Bachelor of Business Administration" data-es="Licenciatura en Administración">Bachelor of Business Administration</h4>
-                        <p class="education-school" data-en="Universidad Nacional de Córdoba - Finance Specialization" data-es="Universidad Nacional de Córdoba - Especialización en Finanzas">Universidad Nacional de Córdoba - Finance Specialization</p>
-                        <p class="education-year">2020</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Certifications Card -->
-            <div class="card">
-                <h3 class="card-title" data-en="Certifications" data-es="Certificaciones">Certifications</h3>
-                <div class="education-list">
-                    <div class="education-item">
-                        <h4 data-en="Stock Market Producer Registration Nº 1271" data-es="Registro de Productor de Bolsa Nº 1271">Agente Productor Nº 1271</h4>
-                        <p class="education-school">CNV (Argentina)</p>
-                        <p class="education-year">2021</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Languages Card -->
-            <div class="card">
-                <h3 class="card-title" data-en="Languages" data-es="Idiomas">Languages</h3>
-                <ul class="languages-list">
-                    <li data-en="Spanish: Native" data-es="Español: Nativo"><strong data-en="Spanish:" data-es="Español:">Spanish:</strong> Native</li>
-                    <li data-en="English: Advanced (C2 CEFR)" data-es="Inglés: Avanzado (C2 MCER)"><strong data-en="English:" data-es="Inglés:">English:</strong> Advanced (C2 CEFR)</li>
-                    <li data-en="Portuguese: Basic (A2)" data-es="Portugués: Básico (A2)"><strong data-en="Portuguese:" data-es="Portugués:">Portuguese:</strong> Basic (A2)</li>
-                </ul>
-            </div>
-        </aside>
-
-        <!-- Right Column (Main Content) -->
-        <main class="right-column">
-            <!-- About Section -->
-            <section id="about" class="card">
-                <h2 class="card-title" data-en="About Me" data-es="Sobre Mí">About Me</h2>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-en="About Me" data-es="Sobre Mí">About Me</h2>
                 <p class="about-text" data-en="Data Scientist and Python Developer with 6+ years bridging advanced analytics, machine learning, and financial engineering. Specialized in building production-grade data solutions—from ETL pipelines and automated systems to pricing models and risk analytics. Expert in Python, SQL, and cloud platforms with proven track record transforming complex financial data into actionable insights across Big Four firms, investment banking, and derivatives markets. Combines deep quantitative finance expertise with modern ML/AI implementation and scalable data architecture." data-es="Científico de Datos y Desarrollador Python con más de 6 años de experiencia integrando analítica avanzada, machine learning e ingeniería financiera. Especializado en construcción de soluciones de datos de nivel producción—desde pipelines ETL y sistemas automatizados hasta modelos de pricing y análisis de riesgo. Experto en Python, SQL y plataformas cloud con trayectoria comprobada transformando datos financieros complejos en insights accionables en firmas Big Four, banca de inversión y mercados de derivados. Combina profunda experiencia en finanzas cuantitativas con implementación moderna de ML/AI y arquitectura de datos escalable.">Data Scientist and Python Developer with 6+ years bridging advanced analytics, machine learning, and financial engineering. Specialized in building production-grade data solutions—from ETL pipelines and automated systems to pricing models and risk analytics. Expert in Python, SQL, and cloud platforms with proven track record transforming complex financial data into actionable insights across Big Four firms, investment banking, and derivatives markets. Combines deep quantitative finance expertise with modern ML/AI implementation and scalable data architecture.</p>
                 <div class="cv-download">
                     <a href="assets/docs/CV_Facundo_Allia_EN.pdf" download class="btn btn-primary" data-en="Download CV (English PDF)" data-es="Descargar CV (PDF Inglés)">Download CV (English PDF)</a>
@@ -200,10 +91,11 @@
                 </div>
             </section>
 
-            <!-- Experience Section -->
-            <section id="experience" class="card">
-                <h2 class="card-title" data-en="Professional Experience" data-es="Experiencia Profesional">Professional Experience</h2>
-                <div class="timeline">
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title" data-en="Professional Experience" data-es="Experiencia Profesional">Professional Experience</h2>
+            <div class="timeline">
                 <!-- Santander -->
                 <div class="timeline-item">
                     <div class="timeline-date">2025 - Present</div>
@@ -317,13 +209,14 @@
                         </div>
                     </div>
                 </div>
-                </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
             <!-- Projects Section -->
             <section id="projects" class="card">
                 <h2 class="card-title" data-en="Projects and Publications" data-es="Proyectos y Publicaciones">Projects and Publications</h2>
-                <div class="projects-grid">
+            <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
                     <h3 class="project-title">carry-trade-analyzer</h3>
@@ -507,10 +400,119 @@
                         <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4296424" target="_blank" class="project-link">View on SSRN →</a>
                     </div>
                 </div>
-                </div>
+            </div>
             </section>
-        </main>
-    </div>
+
+    <!-- Main Grid Layout -->
+    <div class="main-grid">
+        <!-- Left Column -->
+        <aside class="left-column">
+            <!-- Contact Card -->
+            <div id="contact" class="card contact-card">
+                <h3 class="card-title" data-en="Contact" data-es="Contacto">Contact</h3>
+                <ul class="contact-list">
+                    <li>
+                        <span class="icon">✉️</span>
+                        <a href="mailto:facujallia@gmail.com">facujallia@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="icon">💼</span>
+                        <a href="https://www.linkedin.com/in/facundoalliafernandez/" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <span class="icon">💻</span>
+                        <a href="https://github.com/facundoallia" target="_blank">GitHub</a>
+                    </li>
+                    <li>
+                        <span class="icon">📝</span>
+                        <a href="https://medium.com/@facujallia" target="_blank">Medium</a>
+                    </li>
+                </ul>
+                <div class="whatsapp-buttons">
+                    <a href="https://api.whatsapp.com/send?phone=543517414245&text=Hola%2C%20" target="_blank" class="whatsapp-btn">
+                        <span>📱</span>
+                        <span data-en="WhatsApp Argentina" data-es="WhatsApp Argentina">WhatsApp Argentina</span>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=34666000000&text=Hola%2C%20" target="_blank" class="whatsapp-btn">
+                        <span>📱</span>
+                        <span data-en="WhatsApp España" data-es="WhatsApp España">WhatsApp España</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tech Stack Card -->
+            <div class="card">
+                <h3 class="card-title" data-en="Tech Stack" data-es="Stack Tecnológico">Tech Stack</h3>
+                <div class="skill-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">R</span>
+                    <span class="tech-tag">PySpark</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">NumPy</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">Scikit-Learn</span>
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Azure</span>
+                    <span class="tech-tag">Databricks</span>
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">Bloomberg</span>
+                    <span class="tech-tag">Murex</span>
+                </div>
+            </div>
+
+            <!-- Education Card -->
+            <div id="education" class="card">
+                <h3 class="card-title" data-en="Education" data-es="Formación">Education</h3>
+                <div class="education-list">
+                    <div class="education-item">
+                        <h4 data-en="Master's in Finance" data-es="Máster en Finanzas">Master's in Finance</h4>
+                        <p class="education-school">EAE Business School Madrid</p>
+                        <p class="education-year">2024</p>
+                    </div>
+                    <div class="education-item">
+                        <h4 data-en="Postgraduate in Quantitative Finance" data-es="Posgrado en Finanzas Cuantitativas">Postgraduate in Quantitative Finance</h4>
+                        <p class="education-school">UCEMA</p>
+                        <p class="education-year">2022</p>
+                    </div>
+                    <div class="education-item">
+                        <h4 data-en="Data Science Bootcamp (+700h)" data-es="Bootcamp de Ciencia de Datos (+700h)">Data Science Bootcamp (+700h)</h4>
+                        <p class="education-school">Henry</p>
+                        <p class="education-year">2022</p>
+                    </div>
+                    <div class="education-item">
+                        <h4 data-en="Bachelor of Business Administration" data-es="Licenciatura en Administración">Bachelor of Business Administration</h4>
+                        <p class="education-school" data-en="Universidad Nacional de Córdoba - Finance Specialization" data-es="Universidad Nacional de Córdoba - Especialización en Finanzas">Universidad Nacional de Córdoba - Finance Specialization</p>
+                        <p class="education-year">2020</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications Card -->
+            <div class="card">
+                <h3 class="card-title" data-en="Certifications" data-es="Certificaciones">Certifications</h3>
+                <div class="education-list">
+                    <div class="education-item">
+                        <h4 data-en="Stock Market Producer Registration Nº 1271" data-es="Registro de Productor de Bolsa Nº 1271">Agente Productor Nº 1271</h4>
+                        <p class="education-school">CNV (Argentina)</p>
+                        <p class="education-year">2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages Card -->
+            <div class="card">
+                <h3 class="card-title" data-en="Languages" data-es="Idiomas">Languages</h3>
+                <ul class="languages-list">
+                    <li data-en="Spanish: Native" data-es="Español: Nativo"><strong data-en="Spanish:" data-es="Español:">Spanish:</strong> Native</li>
+                    <li data-en="English: Advanced (C2 CEFR)" data-es="Inglés: Avanzado (C2 MCER)"><strong data-en="English:" data-es="Inglés:">English:</strong> Advanced (C2 CEFR)</li>
+                    <li data-en="Portuguese: Basic (A2)" data-es="Portugués: Básico (A2)"><strong data-en="Portuguese:" data-es="Portugués:">Portuguese:</strong> Basic (A2)</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Right Column -->
+        <main class="right-column">
 
     <!-- Footer -->
     <footer class="footer">
