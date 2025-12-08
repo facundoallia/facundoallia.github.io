@@ -1090,4 +1090,217 @@
         font-size: 0.75rem;
         padding: 0.35rem 0.65rem;
     }
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .resource-card {
+        padding: 1.5rem;
+    }
+
+    .resource-icon-large {
+        font-size: 3rem;
+    }
+}
+
+/* Tech Stack Enhancements */
+.tech-stack-card {
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.tech-stack-scrollable {
+    max-height: 550px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.tech-stack-scrollable::-webkit-scrollbar {
+    width: 6px;
+}
+
+.tech-stack-scrollable::-webkit-scrollbar-track {
+    background: var(--bg-color);
+    border-radius: 3px;
+}
+
+.tech-stack-scrollable::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+.tech-category {
+    margin-bottom: 1.5rem;
+}
+
+.tech-category-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Certifications Card */
+.certifications-card {
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.cert-section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cert-section:last-child {
+    border-bottom: none;
+}
+
+.cert-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.cert-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cert-list li {
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.courses-section {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.scrollable-courses {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.scrollable-courses::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollable-courses::-webkit-scrollbar-track {
+    background: var(--bg-color);
+    border-radius: 3px;
+}
+
+.scrollable-courses::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+/* Contact Card Enhancements */
+.contact-card .contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.contact-card .contact-list .icon {
+    font-size: 1.2rem;
+    min-width: 35px;
+}
+
+/* Resources Section */
+.resource-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.resource-icon {
+    font-size: 2rem;
+    min-width: 40px;
+    flex-shrink: 0;
+}
+
+.resource-content {
+    flex: 1;
+}
+
+/* Resources Section - Separate Card Grid */
+#resources .section-intro {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.resource-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent-primary);
+}
+
+.resource-icon-large {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.resource-title {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.resource-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.resource-card .btn {
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Calendly Button Styling */
+.calendly-trigger {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+.calendly-trigger:hover {
+    background-color: var(--accent-hover);
 }
