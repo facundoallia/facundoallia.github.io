@@ -238,10 +238,10 @@
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: 1px;
+    left: 0px;
     top: 6px;
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background: var(--accent-primary);
     border: 3px solid var(--bg-primary);
@@ -905,10 +905,37 @@
     .main-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .contact-card {
         position: static;
+        order: 1;
+    }
+
+    .tech-stack-card {
+        order: 8;
+    }
+
+    .education-card {
+        order: 6;
+    }
+
+    .certifications-card {
+        order: 7;
+    }
+
+    #about {
+        order: 2;
+    }
+
+    #projects {
+        order: 3;
+    }
+
+    #experience {
+        order: 4;
     }
 
     .social-icons {
@@ -942,7 +969,9 @@
     }
 
     .timeline-item::before {
-        left: 24px;
+        left: 23px;
+        width: 16px;
+        height: 16px;
     }
 
     .timeline-date {
@@ -952,6 +981,22 @@
 
     .projects-container {
         max-height: 500px;
+    }
+
+    .container {
+        order: 5;
+    }
+
+    .resources-grid {
+        overflow-x: auto;
+        display: flex;
+        gap: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .resource-card {
+        min-width: 280px;
+        flex-shrink: 0;
     }
 }
 
@@ -1196,8 +1241,7 @@
 }
 
 .courses-section {
-    max-height: 250px;
-    overflow-y: auto;
+    /* No max-height - fully expanded */
 }
 
 .scrollable-courses {
