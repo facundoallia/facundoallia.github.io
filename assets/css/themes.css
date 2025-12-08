@@ -1,0 +1,133 @@
+/* Theme Variables */
+:root {
+    /* Light Theme (Default) */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --nav-bg: rgba(255, 255, 255, 0.95);
+    --card-bg: #ffffff;
+    --text-primary: #212529;
+    --text-secondary: #495057;
+    --accent-primary: #0069ff;
+    --accent-hover: #0056d2;
+    --border-color: #dee2e6;
+    --tag-bg: #e9ecef;
+    --tag-text: #495057;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --nav-bg: rgba(13, 17, 23, 0.95);
+    --card-bg: #161b22;
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --accent-primary: #3b96ff;
+    --accent-hover: #58a6ff;
+    --border-color: #30363d;
+    --tag-bg: #21262d;
+    --tag-text: #8b949e;
+}
+
+/* Theme Transition */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] .navbar {
+    border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .hero {
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+[data-theme="dark"] .hero-image img {
+    border-color: var(--accent-primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .timeline-content,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .education-item,
+[data-theme="dark"] .skill-category,
+[data-theme="dark"] .languages-section,
+[data-theme="dark"] .service-card,
+[data-theme="dark"] .why-item {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .project-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .contact-item {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .contact-item:hover {
+    background: var(--accent-primary);
+    color: white;
+}
+
+[data-theme="dark"] .phone-numbers {
+    background: var(--card-bg);
+}
+
+[data-theme="dark"] .footer {
+    background: var(--bg-secondary);
+    border-top-color: var(--border-color);
+}
+
+[data-theme="dark"] .consulting-hero {
+    background: linear-gradient(135deg, #0056d2 0%, #003d99 100%);
+}
+
+[data-theme="dark"] .why-section {
+    background: var(--bg-secondary);
+}
+
+/* Theme Toggle Animation */
+.theme-icon {
+    transition: transform 0.3s ease;
+}
+
+.control-btn:active .theme-icon {
+    transform: rotate(180deg);
+}
+
+/* Smooth color transitions for all themed elements */
+* {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Preserve fast transitions for interactive elements */
+a, .btn, .control-btn, .project-card, .contact-item {
+    transition: all 0.3s ease;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .navbar,
+    .nav-controls,
+    .footer,
+    .calendly-badge-widget,
+    .hero-buttons,
+    .service-cta,
+    .cta-section {
+        display: none;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+}
