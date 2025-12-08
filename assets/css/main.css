@@ -238,7 +238,7 @@
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: 0px;
+    left: 1px;
     top: 6px;
     width: 14px;
     height: 14px;
