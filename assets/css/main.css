@@ -213,7 +213,7 @@
 .timeline::before {
     content: '';
     position: absolute;
-    left: 8px;
+    left: 7px;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -238,7 +238,7 @@
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: 2px;
+    left: 0px;
     top: 6px;
     width: 14px;
     height: 14px;
@@ -518,7 +518,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    align-self: start;
+    align-self: stretch;
 }
 
 .right-column {
@@ -1140,8 +1140,7 @@
 
 /* Tech Stack Enhancements */
 .tech-stack-card {
-    max-height: 600px;
-    overflow: hidden;
+    /* No max-height - fully expanded */
 }
 
 .tech-stack-container {
@@ -1163,8 +1162,7 @@
 
 /* Certifications Card */
 .certifications-card {
-    max-height: 1050px;
-    overflow: visible;
+    /* No max-height - fully expanded */
 }
 
 .cert-section {
@@ -1203,8 +1201,7 @@
 }
 
 .scrollable-courses {
-    max-height: 350px;
-    overflow-y: auto;
+    /* No max-height - fully expanded */
     padding-right: 0.5rem;
 }
 
