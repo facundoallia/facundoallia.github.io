@@ -218,6 +218,7 @@
     bottom: 0;
     width: 2px;
     background: var(--accent-primary);
+    z-index: 0;
 }
 
 .timeline-item {
@@ -234,6 +235,10 @@
     font-weight: 600;
     color: var(--accent-primary);
     font-size: 0.9rem;
+    z-index: 2;
+    background: var(--bg-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
 }
 
 .timeline-item::before {
@@ -246,6 +251,7 @@
     border-radius: 50%;
     background: var(--accent-primary);
     border: 3px solid var(--bg-primary);
+    z-index: 1;
 }
 
 .timeline-content {
@@ -1132,7 +1138,7 @@
 }
 
 .tech-category {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .tech-category-title {
@@ -1243,9 +1249,13 @@
     text-align: center;
 }
 
+.resources-section {
+    margin-bottom: 2rem;
+}
+
 .resources-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 1.5rem;
 }
