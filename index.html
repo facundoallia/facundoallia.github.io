@@ -62,7 +62,7 @@
                 </div>
 
                 <!-- Social Media Links -->
-                <div class="hero-social-links">
+                <div class="hero-social-links" style="justify-content: flex-start;">
                     <a href="https://www.linkedin.com/in/facundoalliafernandez/" target="_blank" class="social-link" aria-label="LinkedIn">
                         <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
@@ -101,12 +101,12 @@
                         <span class="icon">✉️</span>
                         <a href="mailto:facujallia@gmail.com">facujallia@gmail.com</a>
                     </li>
-                    <li>
-                        <span class="icon">📱 (ARG)</span>
+                    <li style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span class="icon" style="min-width: 80px;">📱 (ARG)</span>
                         <a href="https://api.whatsapp.com/send?phone=543517414245&text=Hola%2C%20" target="_blank">+54 9 351 741-4245</a>
                     </li>
-                    <li>
-                        <span class="icon">📱 (ESP)</span>
+                    <li style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span class="icon" style="min-width: 80px;">📱 (ESP)</span>
                         <a href="https://api.whatsapp.com/send?phone=34624695706&text=Hola%2C%20" target="_blank">+34 624 69 57 06</a>
                     </li>
                 </ul>
@@ -118,7 +118,7 @@
             <!-- Tech Stack Card -->
             <div class="card tech-stack-card">
                 <h3 class="card-title" data-en="Tech Stack & Skills" data-es="Stack Tecnológico y Habilidades">Tech Stack & Skills</h3>
-                <div class="tech-stack-scrollable">
+                <div class="tech-stack-container">
                     <div class="tech-category">
                         <h4 class="tech-category-title" data-en="Programming & Data" data-es="Programación y Datos">Programming & Data</h4>
                         <div class="skill-tags">
@@ -279,7 +279,7 @@
             <!-- About Section -->
             <section id="about" class="card">
                 <h2 class="card-title" data-en="About Me" data-es="Sobre Mí">About Me</h2>
-                <p class="about-text" data-en="Data Scientist and Python Developer with 6+ years bridging advanced analytics, machine learning, and financial engineering. Specialized in building production-grade data solutions—from ETL pipelines and automated systems to pricing models and risk analytics. Expert in Python, SQL, and cloud platforms with proven track record transforming complex financial data into actionable insights across Big Four firms, investment banking, and derivatives markets. Combines deep quantitative finance expertise with modern ML/AI implementation and scalable data architecture." data-es="Científico de Datos y Desarrollador Python con más de 6 años de experiencia integrando analítica avanzada, machine learning e ingeniería financiera. Especializado en construcción de soluciones de datos de nivel producción—desde pipelines ETL y sistemas automatizados hasta modelos de pricing y análisis de riesgo. Experto en Python, SQL y plataformas cloud con trayectoria comprobada transformando datos financieros complejos en insights accionables en firmas Big Four, banca de inversión y mercados de derivados. Combina profunda experiencia en finanzas cuantitativas con implementación moderna de ML/AI y arquitectura de datos escalable.">Data Scientist and Python Developer with 6+ years bridging advanced analytics, machine learning, and financial engineering. Specialized in building production-grade data solutions—from ETL pipelines and automated systems to pricing models and risk analytics. Expert in Python, SQL, and cloud platforms with proven track record transforming complex financial data into actionable insights across Big Four firms, investment banking, and derivatives markets. Combines deep quantitative finance expertise with modern ML/AI implementation and scalable data architecture.</p>
+                <p class="about-text" data-en="Data Scientist and Python Developer with 6+ years bridging advanced analytics, machine learning, and financial engineering. Specialized in building production-grade data solutions from ETL pipelines and automated systems to pricing models and risk analytics. Expert in Python, SQL, and cloud platforms with proven track record transforming complex financial data into actionable insights across Big Four firms, investment banking, and derivatives markets. Combines deep quantitative finance expertise with modern ML/AI implementation and scalable data architecture." data-es="Científico de Datos y Desarrollador Python con más de 6 años de experiencia integrando analítica avanzada, machine learning e ingeniería financiera. Especializado en construcción de soluciones de datos de nivel producción desde pipelines ETL y sistemas automatizados hasta modelos de pricing y análisis de riesgo. Experto en Python, SQL y plataformas cloud con trayectoria comprobada transformando datos financieros complejos en insights accionables en firmas Big Four, banca de inversión y mercados de derivados. Combina profunda experiencia en finanzas cuantitativas con implementación moderna de ML/AI y arquitectura de datos escalable.">Data Scientist and Python Developer with 6+ years bridging advanced analytics, machine learning, and financial engineering. Specialized in building production-grade data solutions from ETL pipelines and automated systems to pricing models and risk analytics. Expert in Python, SQL, and cloud platforms with proven track record transforming complex financial data into actionable insights across Big Four firms, investment banking, and derivatives markets. Combines deep quantitative finance expertise with modern ML/AI implementation and scalable data architecture.</p>
             </section>
 
             <!-- Experience Section -->
@@ -288,10 +288,12 @@
                 <div class="timeline">
                 <!-- Santander -->
                 <div class="timeline-item">
-                    <div class="timeline-date">2025 - Present</div>
                     <div class="timeline-content">
                         <h3 class="timeline-company">Banco Santander Corporate & Investment Banking</h3>
-                        <h4 class="timeline-position" data-en="Data Scientist & Automation Engineer" data-es="Científico de Datos e Ingeniero de Automatización">Data Scientist & Automation Engineer</h4>
+                        <h4 class="timeline-position">
+                            <span data-en="Data Scientist & Automation Engineer" data-es="Científico de Datos e Ingeniero de Automatización">Data Scientist & Automation Engineer</span>
+                            <span class="timeline-date">2025 - Present</span>
+                        </h4>
                         <ul class="timeline-responsibilities">
                             <li data-en="Design and implement Python-based automation solutions replacing manual workflows, reducing operational costs and error rates. Develop ETL pipelines ingesting data from multiple sources including data lakes and Murex systems." data-es="Diseñar e implementar soluciones de automatización basadas en Python reemplazando flujos de trabajo manuales, reduciendo costos operativos y tasas de error. Desarrollar pipelines ETL ingiriendo datos de múltiples fuentes incluyendo lagos de datos y sistemas Murex.">Design and implement Python-based automation solutions replacing manual workflows, reducing operational costs and error rates. Develop ETL pipelines ingesting data from multiple sources including data lakes and Murex systems.</li>
                             <li data-en="Built comprehensive Python solution analyzing bank exposure across multiple benchmarks with custom GUI for functional analysts, streamlining decision-making processes." data-es="Construir solución integral en Python analizando exposición bancaria con GUI personalizada para analistas funcionales, optimizando procesos de toma de decisiones.">Built comprehensive Python solution analyzing bank exposure across multiple benchmarks with custom GUI for functional analysts, streamlining decision-making processes.</li>
@@ -314,10 +316,12 @@
 
                 <!-- PwC -->
                 <div class="timeline-item">
-                    <div class="timeline-date">2024 - 2025</div>
                     <div class="timeline-content">
                         <h3 class="timeline-company">PricewaterhouseCoopers (PwC)</h3>
-                        <h4 class="timeline-position" data-en="Quantitative Analyst" data-es="Analista Cuantitativo">Quantitative Analyst</h4>
+                        <h4 class="timeline-position">
+                            <span data-en="Quantitative Analyst" data-es="Analista Cuantitativo">Quantitative Analyst</span>
+                            <span class="timeline-date">2024 - 2025</span>
+                        </h4>
                         <ul class="timeline-responsibilities">
                             <li data-en="Specialized in complex derivatives pricing using stochastic models and Monte Carlo simulation. Developed credit derivatives valuation engine with Python implementing CVA/DVA frameworks." data-es="Especializado en pricing de derivados complejos usando modelos estocásticos y simulación Monte Carlo. Desarrollar motor de valoración de derivados de crédito con Python implementando frameworks CVA/DVA.">Specialized in complex derivatives pricing using stochastic models and Monte Carlo simulation. Developed credit derivatives valuation engine with Python implementing CVA/DVA frameworks.</li>
                             <li data-en="Performed market risk assessments and built XVA calculation models for regulatory compliance, collaborating with audit teams on validation frameworks." data-es="Realizar evaluaciones de riesgo de mercado y construir modelos de cálculo XVA para cumplimiento regulatorio, colaborando con equipos de auditoría en frameworks de validación.">Performed market risk assessments and built XVA calculation models for regulatory compliance, collaborating with audit teams on validation frameworks.</li>
@@ -339,10 +343,12 @@
 
                 <!-- Logos -->
                 <div class="timeline-item">
-                    <div class="timeline-date">2020 - Present</div>
                     <div class="timeline-content">
                         <h3 class="timeline-company">Logos Servicios Financieros</h3>
-                        <h4 class="timeline-position" data-en="Financial Advisor & Founder" data-es="Asesor Financiero y Fundador">Financial Advisor & Founder</h4>
+                        <h4 class="timeline-position">
+                            <span data-en="Financial Advisor & Founder" data-es="Asesor Financiero y Fundador">Financial Advisor & Founder</span>
+                            <span class="timeline-date">2020 - Present</span>
+                        </h4>
                         <ul class="timeline-responsibilities">
                             <li data-en="Provide financial advisory services and portfolio management with customized investment strategies." data-es="Proveer servicios de asesoramiento financiero y gestión de carteras con estrategias de inversión personalizadas.">Provide financial advisory services and portfolio management with customized investment strategies.</li>
                             <li data-en="Established and managed proprietary client portfolio ensuring high-quality service and satisfaction." data-es="Establecer y gestionar cartera de clientes propietaria asegurando servicio y satisfacción de alta calidad.">Established and managed proprietary client portfolio ensuring high-quality service and satisfaction.</li>
@@ -360,10 +366,12 @@
 
                 <!-- Accenture -->
                 <div class="timeline-item">
-                    <div class="timeline-date">2022 - 2023</div>
                     <div class="timeline-content">
                         <h3 class="timeline-company">Accenture</h3>
-                        <h4 class="timeline-position" data-en="Financial Data Transition Specialist" data-es="Especialista en Transición de Datos Financieros">Financial Data Transition Specialist</h4>
+                        <h4 class="timeline-position">
+                            <span data-en="Financial Data Transition Specialist" data-es="Especialista en Transición de Datos Financieros">Financial Data Transition Specialist</span>
+                            <span class="timeline-date">2022 - 2023</span>
+                        </h4>
                         <ul class="timeline-responsibilities">
                             <li data-en="Developed KPIs and financial metrics for enterprise reporting, identifying process optimization opportunities boosting profitability." data-es="Desarrollar KPIs y métricas financieras para reportes empresariales, identificando oportunidades de optimización que impulsan rentabilidad.">Developed KPIs and financial metrics for enterprise reporting, identifying process optimization opportunities boosting profitability.</li>
                             <li data-en="Implemented forecasting tools and management software improving financial visibility and decision-making." data-es="Implementar herramientas de forecasting y software de gestión mejorando visibilidad financiera y toma de decisiones.">Implemented forecasting tools and management software improving financial visibility and decision-making.</li>
@@ -382,10 +390,12 @@
 
                 <!-- Nixtla -->
                 <div class="timeline-item">
-                    <div class="timeline-date">2022</div>
                     <div class="timeline-content">
                         <h3 class="timeline-company">Nixtla</h3>
-                        <h4 class="timeline-position" data-en="Data Scientist" data-es="Científico de Datos">Data Scientist</h4>
+                        <h4 class="timeline-position">
+                            <span data-en="Data Scientist" data-es="Científico de Datos">Data Scientist</span>
+                            <span class="timeline-date">2022</span>
+                        </h4>
                         <ul class="timeline-responsibilities">
                             <li data-en="Performed time series forecasting and modeling (ARIMA, ETS, CES) using Python and R for predictive analytics." data-es="Realizar forecasting y modelado de series temporales (ARIMA, ETS, CES) usando Python y R para analítica predictiva.">Performed time series forecasting and modeling (ARIMA, ETS, CES) using Python and R for predictive analytics.</li>
                             <li data-en="Developed automated forecasting pipelines on Databricks with PySpark for scalable model deployment." data-es="Desarrollar pipelines automatizados de forecasting en Databricks con PySpark para despliegue escalable de modelos.">Developed automated forecasting pipelines on Databricks with PySpark for scalable model deployment.</li>
@@ -407,10 +417,12 @@
 
                 <!-- Matba Rofex -->
                 <div class="timeline-item">
-                    <div class="timeline-date">2021 - 2023</div>
                     <div class="timeline-content">
                         <h3 class="timeline-company">Matba Rofex</h3>
-                        <h4 class="timeline-position" data-en="Institutional Derivatives Trader - Market Making" data-es="Trader Institucional de Derivados - Market Making">Institutional Derivatives Trader - Market Making</h4>
+                        <h4 class="timeline-position">
+                            <span data-en="Institutional Derivatives Trader - Market Making" data-es="Trader Institucional de Derivados - Market Making">Institutional Derivatives Trader - Market Making</span>
+                            <span class="timeline-date">2021 - 2023</span>
+                        </h4>
                         <ul class="timeline-responsibilities">
                             <li data-en="Actively traded futures and options on financial assets and commodities, managing market-funded account to meet volume standards." data-es="Negociar activamente futuros y opciones sobre activos financieros y commodities, gestionando cuenta financiada por el mercado para cumplir estándares de volumen.">Actively traded futures and options on financial assets and commodities, managing market-funded account to meet volume standards.</li>
                             <li data-en="Demonstrated strong quantitative skills forecasting market trends, consistently outperforming benchmark for two consecutive years." data-es="Demostrar fuertes habilidades cuantitativas pronosticando tendencias de mercado, superando consistentemente el benchmark durante dos años consecutivos.">Demonstrated strong quantitative skills forecasting market trends, consistently outperforming benchmark for two consecutive years.</li>
@@ -428,10 +440,12 @@
 
                 <!-- Libertad S.A. -->
                 <div class="timeline-item">
-                    <div class="timeline-date">2021 - 2022</div>
                     <div class="timeline-content">
                         <h3 class="timeline-company">Libertad S.A.</h3>
-                        <h4 class="timeline-position" data-en="Commercial Data Analyst" data-es="Analista de Datos Comerciales">Commercial Data Analyst</h4>
+                        <h4 class="timeline-position">
+                            <span data-en="Commercial Data Analyst" data-es="Analista de Datos Comerciales">Commercial Data Analyst</span>
+                            <span class="timeline-date">2021 - 2022</span>
+                        </h4>
                         <ul class="timeline-responsibilities">
                             <li data-en="Developed monthly and annual budgets with demand forecasts incorporating macroeconomic variables via interactive dashboards." data-es="Desarrollar presupuestos mensuales y anuales con pronósticos de demanda incorporando variables macroeconómicas mediante dashboards interactivos.">Developed monthly and annual budgets with demand forecasts incorporating macroeconomic variables via interactive dashboards.</li>
                             <li data-en="Implemented real-time sales data ingestion and analysis solution at scale, adding significant operational value." data-es="Implementar solución de ingesta y análisis de datos de ventas en tiempo real a escala, agregando valor operacional significativo.">Implemented real-time sales data ingestion and analysis solution at scale, adding significant operational value.</li>
@@ -449,10 +463,12 @@
 
                 <!-- Peugeot -->
                 <div class="timeline-item">
-                    <div class="timeline-date">2019</div>
                     <div class="timeline-content">
                         <h3 class="timeline-company">Peugeot Avant Autocity</h3>
-                        <h4 class="timeline-position" data-en="Data Analyst" data-es="Analista de Datos">Data Analyst</h4>
+                        <h4 class="timeline-position">
+                            <span data-en="Data Analyst" data-es="Analista de Datos">Data Analyst</span>
+                            <span class="timeline-date">2019</span>
+                        </h4>
                         <ul class="timeline-responsibilities">
                             <li data-en="Maintained and structured operational databases using SQL, Excel, SAP and proprietary ERP/CRM systems." data-es="Mantener y estructurar bases de datos operativas usando SQL, Excel, SAP y sistemas ERP/CRM propietarios.">Maintained and structured operational databases using SQL, Excel, SAP and proprietary ERP/CRM systems.</li>
                             <li data-en="Built dashboards and performance reports supporting business decisions and operational efficiency improvements." data-es="Construir dashboards y reportes de desempeño que apoyan decisiones empresariales y mejoras de eficiencia operacional.">Built dashboards and performance reports supporting business decisions and operational efficiency improvements.</li>
@@ -541,7 +557,10 @@
                         <span class="tech-tag">TradingView</span>
                         <span class="tech-tag">Trading</span>
                     </div>
-                    <a href="https://github.com/facundoallia/Trading-Screener-with-Python-and-Tradingview" target="_blank" class="project-link">View on GitHub →</a>
+                    <div class="project-links">
+                        <a href="https://github.com/facundoallia/Trading-Screener-with-Python-and-Tradingview" target="_blank" class="project-link">View on GitHub →</a>
+                        <a href="https://medium.com/@facujallia/building-an-effective-trading-screener-with-python-and-tradingview-9329db9afaa9" target="_blank" class="project-link">View on Medium →</a>
+                    </div>
                 </div>
 
                 <!-- Project 7 -->
@@ -553,7 +572,10 @@
                         <span class="tech-tag">Time Series</span>
                         <span class="tech-tag">Forecasting</span>
                     </div>
-                    <a href="https://github.com/facundoallia/calendar-spread-time-series-forecasting" target="_blank" class="project-link">View on GitHub →</a>
+                    <div class="project-links">
+                        <a href="https://github.com/facundoallia/calendar-spread-time-series-forecasting" target="_blank" class="project-link">View on GitHub →</a>
+                        <a href="https://medium.com/@facujallia/unleashing-the-power-of-time-series-forecasting-in-calendar-spread-strategies-an-application-in-2cc568933f3a" target="_blank" class="project-link">View on Medium →</a>
+                    </div>
                 </div>
 
                 <!-- Project 8 -->
@@ -577,7 +599,10 @@
                         <span class="tech-tag">Jupyter</span>
                         <span class="tech-tag">Data Analysis</span>
                     </div>
-                    <a href="https://github.com/facundoallia/major-stock-market-indexes-historical-monthly-returns" target="_blank" class="project-link">View on GitHub →</a>
+                    <div class="project-links">
+                        <a href="https://github.com/facundoallia/major-stock-market-indexes-historical-monthly-returns" target="_blank" class="project-link">View on GitHub →</a>
+                        <a href="https://medium.com/@facujallia/sell-in-may-and-go-away-a-study-of-major-stock-market-indexs-historical-monthly-returns-96cf8ed3df1" target="_blank" class="project-link">View on Medium →</a>
+                    </div>
                 </div>
 
                 <!-- Project 10 -->
@@ -589,7 +614,10 @@
                         <span class="tech-tag">NLP</span>
                         <span class="tech-tag">Crypto</span>
                     </div>
-                    <a href="https://github.com/facundoallia/Exploring-the-Relationship-between-Elon-Musk-Tweets-and-Dogecoin-Volatility" target="_blank" class="project-link">View on GitHub →</a>
+                    <div class="project-links">
+                        <a href="https://github.com/facundoallia/Exploring-the-Relationship-between-Elon-Musk-Tweets-and-Dogecoin-Volatility" target="_blank" class="project-link">View on GitHub →</a>
+                        <a href="https://medium.com/@facujallia/tweet-trade-profit-exploring-the-relationship-between-elon-musks-tweets-and-dogecoin-volatility-7da28ee9aead" target="_blank" class="project-link">View on Medium →</a>
+                    </div>
                 </div>
 
                 <!-- Project 11 -->
@@ -601,7 +629,10 @@
                         <span class="tech-tag">Trading Strategy</span>
                         <span class="tech-tag">Backtesting</span>
                     </div>
-                    <a href="https://github.com/facundoallia/Maximizing-Profitability-of-Moving-Average-Crossover" target="_blank" class="project-link">View on GitHub →</a>
+                    <div class="project-links">
+                        <a href="https://github.com/facundoallia/Maximizing-Profitability-of-Moving-Average-Crossover" target="_blank" class="project-link">View on GitHub →</a>
+                        <a href="https://medium.com/@facujallia/maximizing-profitability-of-moving-average-crossover-trading-strategy-what-moving-averages-to-use-e5cd70085690" target="_blank" class="project-link">View on Medium →</a>
+                    </div>
                 </div>
 
                 <!-- Project 12 -->
@@ -653,7 +684,10 @@
                             <span class="tech-tag">Portfolio Management</span>
                             <span class="tech-tag">Research</span>
                         </div>
-                        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4296424" target="_blank" class="project-link">View on SSRN →</a>
+                        <div class="project-links">
+                            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4296424" target="_blank" class="project-link">View on SSRN →</a>
+                            <a href="https://medium.com/@facujallia/stock-classification-using-k-means-clustering-8441f75363de" target="_blank" class="project-link">View on Medium →</a>
+                        </div>
                     </div>
                 </div>
                 </div>
@@ -665,9 +699,7 @@
     <div class="container">
         <section id="resources" class="card resources-section">
             <h2 class="card-title" data-en="Free Financial Resources" data-es="Recursos Financieros Gratuitos">Free Financial Resources</h2>
-            <p class="section-intro" data-en="Access free tools and resources for financial analysis and portfolio management" data-es="Accede a herramientas y recursos gratuitos para análisis financiero y gestión de carteras">Access free tools and resources for financial analysis and portfolio management</p>
-            
-            <div class="resources-grid">
+                <p class="section-intro" data-en="Access free tools and resources for financial analysis and portfolio management. These comprehensive tools support research, analysis, valuation, and portfolio management workflows for both retail and institutional investors, providing real-time data and advanced metrics to enhance decision-making." data-es="Accede a herramientas y recursos gratuitos para análisis financiero y gestión de carteras. Estas herramientas completas apoyan flujos de trabajo de investigación, análisis, valuación y gestión de portafolios tanto para inversionistas minoristas como institucionales, proporcionando datos en tiempo real y métricas avanzadas para mejorar la toma de decisiones.">Access free tools and resources for financial analysis and portfolio management. These comprehensive tools support research, analysis, valuation, and portfolio management workflows for both retail and institutional investors, providing real-time data and advanced metrics to enhance decision-making.</p>            <div class="resources-grid">
                 <div class="resource-card">
                     <div class="resource-icon-large">📊</div>
                     <h3 class="resource-title" data-en="Carry Trade Analysis" data-es="Análisis Carry Trade">Carry Trade Analysis</h3>

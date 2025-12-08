@@ -213,7 +213,7 @@
 .timeline::before {
     content: '';
     position: absolute;
-    left: 50px;
+    left: 0;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -224,27 +224,21 @@
 .timeline-item {
     margin-bottom: 3rem;
     position: relative;
-    padding-left: 100px;
+    padding-left: 30px;
 }
 
 .timeline-date {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100px;
-    font-weight: 600;
-    color: var(--accent-primary);
-    font-size: 0.9rem;
-    z-index: 2;
-    background: var(--bg-primary);
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    display: inline;
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-left: 0.5rem;
 }
 
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: 44px;
+    left: -6px;
     top: 5px;
     width: 12px;
     height: 12px;
@@ -272,6 +266,10 @@
     font-size: 1.1rem;
     color: var(--accent-primary);
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .timeline-responsibilities {
@@ -368,6 +366,13 @@
     flex-wrap: wrap;
     gap: 0.4rem;
     margin-bottom: 0.75rem;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
 }
 
 .project-link {
@@ -999,10 +1004,15 @@
         display: none;
     }
 
+    .timeline-position {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .timeline-date {
-        position: static;
-        width: auto;
-        margin-bottom: 0.5rem;
+        display: block;
+        margin-left: 0;
+        margin-top: 0.25rem;
     }
 
     .why-grid {
@@ -1098,12 +1108,19 @@
     }
 
     .resources-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 
     .resource-card {
         padding: 1.5rem;
+    }
+}
+
+/* Mobile - Single column for resources */
+@media (max-width: 600px) {
+    .resources-grid {
+        grid-template-columns: 1fr;
     }
 
     .resource-icon-large {
@@ -1117,24 +1134,8 @@
     overflow: hidden;
 }
 
-.tech-stack-scrollable {
-    max-height: 550px;
-    overflow-y: auto;
-    padding-right: 0.5rem;
-}
-
-.tech-stack-scrollable::-webkit-scrollbar {
-    width: 6px;
-}
-
-.tech-stack-scrollable::-webkit-scrollbar-track {
-    background: var(--bg-color);
-    border-radius: 3px;
-}
-
-.tech-stack-scrollable::-webkit-scrollbar-thumb {
-    background: var(--border-color);
-    border-radius: 3px;
+.tech-stack-container {
+    /* No scrolling - fully expanded */
 }
 
 .tech-category {
@@ -1152,7 +1153,7 @@
 
 /* Certifications Card */
 .certifications-card {
-    max-height: 600px;
+    max-height: 850px;
     overflow: hidden;
 }
 
@@ -1255,8 +1256,8 @@
 
 .resources-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
     margin-top: 1.5rem;
 }
 
