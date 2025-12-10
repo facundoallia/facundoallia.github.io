@@ -124,6 +124,12 @@
     object-fit: cover;
     border: 5px solid var(--accent-primary);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
 }
 
 .hero-content {
@@ -909,33 +915,37 @@
         flex-direction: column;
     }
 
-    .contact-card {
-        position: static;
+    #about {
         order: 1;
     }
 
-    .tech-stack-card {
-        order: 8;
-    }
-
-    .education-card {
-        order: 6;
-    }
-
-    .certifications-card {
-        order: 7;
-    }
-
-    #about {
+    #projects {
         order: 2;
     }
 
-    #projects {
+    .container {
         order: 3;
     }
 
     #experience {
         order: 4;
+    }
+
+    .education-card {
+        order: 5;
+    }
+
+    .certifications-card {
+        order: 6;
+    }
+
+    .tech-stack-card {
+        order: 7;
+    }
+
+    .contact-card {
+        position: static;
+        order: 8;
     }
 
     .social-icons {
@@ -954,6 +964,9 @@
     .hero-image img {
         width: 200px;
         height: 200px;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+        image-rendering: high-quality;
     }
 
     .hero-buttons {
@@ -981,10 +994,6 @@
 
     .projects-container {
         max-height: 500px;
-    }
-
-    .container {
-        order: 5;
     }
 
     .resources-grid {
@@ -1092,6 +1101,9 @@
 
     .hero-image img {
         width: 150px;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+        image-rendering: high-quality;
         height: 150px;
     }
 
