@@ -90,7 +90,7 @@
         if (show && animate && !reduced) c.animate([{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }], { duration: 280, delay: shown++ * 35, easing: 'ease-out', fill: 'backwards' });
       });
       more.hidden = filter !== 'all' || expanded;
-      privateHead.hidden = !cards.some(c => c.matches('.private') && !c.hidden);
+      privateHead.hidden = !cards.some(c => c.matches('.private:not(.lead)') && !c.hidden);
     };
     filters.forEach(b => b.addEventListener('click', () => {
       filter = b.dataset.filter;
