@@ -77,6 +77,8 @@
   if (grid) {
     const cards = [...grid.querySelectorAll('.card')];
     const more = document.getElementById('more');
+    const privateHead = document.getElementById('private-head');
+    if (reduced) grid.querySelectorAll('video').forEach(v => { v.autoplay = false; v.pause(); });
     const filters = document.querySelectorAll('[data-filter]');
     let filter = 'all', expanded = false;
     const paint = animate => {
@@ -88,6 +90,7 @@
         if (show && animate && !reduced) c.animate([{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }], { duration: 280, delay: shown++ * 35, easing: 'ease-out', fill: 'backwards' });
       });
       more.hidden = filter !== 'all' || expanded;
+      privateHead.hidden = !cards.some(c => c.matches('.private') && !c.hidden);
     };
     filters.forEach(b => b.addEventListener('click', () => {
       filter = b.dataset.filter;

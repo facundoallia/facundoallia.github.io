@@ -126,6 +126,14 @@ h2 { font-size: clamp(1.8rem, 3.6vw, 2.5rem); font-weight: 700; letter-spacing: 
 .card:hover::before { opacity: 1; }
 .card > * { position: relative; }
 .card:last-of-type { padding-bottom: .25rem; }
+#grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.5rem; }
+#grid > * { grid-column: 1 / -1; }
+#grid > .card.feature { grid-column: auto; grid-template-columns: minmax(0, 1fr); align-content: start; }
+.card.feature::before { inset: 0; }
+.card.feature .thumb { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+.thumb video { display: block; width: 100%; height: 100%; object-fit: cover; background: #0e1621; }
+.card.private { grid-template-columns: minmax(0, 1fr); padding-block: 1.1rem; }
+.private-head { margin-top: 2rem; padding-bottom: .9rem; font-size: 1rem; font-weight: 600; color: var(--mute); }
 .card-body { display: flex; flex-direction: column; gap: .6rem; min-width: 0; }
 .card-head { display: flex; flex-direction: column; align-items: flex-start; gap: .4rem; }
 .card-name { font-size: .82rem; font-weight: 600; color: var(--accent); }
@@ -243,6 +251,7 @@ h2 { font-size: clamp(1.8rem, 3.6vw, 2.5rem); font-weight: 700; letter-spacing: 
   .panel { padding: 1rem; }
   .card { grid-template-columns: 1fr; gap: .9rem; }
   .card::before { inset: 0 -1rem; }
+  #grid > .card.feature { grid-column: 1 / -1; }
   .thumb { width: 100%; height: auto; aspect-ratio: 16 / 9; }
   .job summary { flex-wrap: wrap; padding-inline: .9rem; }
   .job summary .job-title { flex-basis: calc(100% - 68px - 1rem); }
