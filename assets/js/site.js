@@ -122,6 +122,8 @@
     addEventListener('scroll', clip, { passive: true });
     addEventListener('resize', clip);
     clip();
+    // Open jobs balance the two columns; on one column they only add length
+    if (!wide.matches) document.querySelectorAll('.job[open]').forEach((j, i) => { if (i) j.open = false; });
   }
 
   // Stack chips appear in sequence, once
