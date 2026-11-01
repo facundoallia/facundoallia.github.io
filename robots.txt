@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://facundoallia.github.io/sitemap.xml

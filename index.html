@@ -1,780 +1,402 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-title-en="Facundo Allia Fernandez | Data Scientist, AI and Data Engineer" data-title-es="Facundo Allia Fernandez | Científico de datos, ingeniero de IA y datos">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Facundo Joel Allia Fernandez - Data Scientist & Quantitative Finance Specialist. Python Developer with 7+ years experience in derivatives pricing, risk analytics, ETL pipelines, ML/AI, and cloud data architecture. Currently at Banco Santander CIB.">
-    <meta name="author" content="Facundo Joel Allia Fernandez">
-    <meta name="keywords" content="data scientist, quantitative finance, python, machine learning, LLMs, RAG, AI agents, MCP, model context protocol, Databricks, PySpark, FastAPI, REST API, ETL, cloud architecture, AWS, Azure, derivatives pricing, risk analytics, Monte Carlo, financial engineering, SQL, Power BI, data engineering">
-    <title>Facundo Allia | Data Scientist & Quant Finance Specialist</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/themes.css">
-    
-    <!-- Calendly widget -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function(){var r=document.documentElement,l;r.classList.add('js');try{l=localStorage.getItem('site-lang')}catch(e){}
+r.lang=l==='es'?'es':'en';document.title=r.dataset['title'+(r.lang==='es'?'Es':'En')]})();
+</script>
+<title>Facundo Allia Fernandez | Data Scientist, AI and Data Engineer</title>
+<meta name="description" content="Facundo Allia Fernandez: senior data scientist and automation engineer at Santander CIB. AI systems, data pipelines and market applications in production, with a background in quantitative finance.">
+<meta name="author" content="Facundo Allia Fernandez">
+<link rel="canonical" href="https://facundoallia.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Facundo Allia Fernandez | Data Scientist, AI and Data Engineer">
+<meta property="og:description" content="AI systems, data pipelines and market applications in production, with a background in quantitative finance.">
+<meta property="og:url" content="https://facundoallia.github.io/">
+<meta property="og:image" content="https://facundoallia.github.io/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@facundoallia">
+<meta name="theme-color" content="#060d14">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Facundo Allia Fernandez","url":"https://facundoallia.github.io/","image":"https://facundoallia.github.io/assets/img/portrait.webp","email":"mailto:facujallia@gmail.com","jobTitle":"Senior Data Scientist & Automation Engineer","worksFor":{"@type":"Organization","name":"Banco Santander Corporate & Investment Banking"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"EAE Business School"},{"@type":"CollegeOrUniversity","name":"Universidad Nacional de Córdoba"},{"@type":"CollegeOrUniversity","name":"Universidad del CEMA"}],"knowsAbout":["Data engineering","Machine learning","LLMs","Quantitative finance"],"sameAs":["https://www.linkedin.com/in/facundoalliafernandez/","https://github.com/facundoallia","https://medium.com/@facujallia","https://x.com/facundoallia"]}
+</script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <a href="index.html">Facundo Allia</a>
-            </div>
-            <div class="nav-links">
-                <a href="#about" data-en="About" data-es="Sobre mí">About</a>
-                <a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a>
-                <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
-                <a href="#resources" data-en="Resources" data-es="Recursos">Resources</a>
-                <a href="consulting.html" data-en="Consulting" data-es="Consultoría">Consulting</a>
-                <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
-            </div>
-            <div class="nav-controls">
-                <button id="lang-toggle" class="control-btn" aria-label="Toggle language">
-                    <span class="lang-text">ES</span>
-                </button>
-                <button id="theme-toggle" class="control-btn" aria-label="Toggle theme">
-                    <span class="theme-icon">🌙</span>
-                </button>
-            </div>
-        </div>
-    </nav>
+<a class="skip" href="#main"><span lang="en">Skip to content</span><span lang="es">Saltar al contenido</span></a>
+<div id="bg" aria-hidden="true"></div>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-container">
-            <div class="hero-image">
-                <img src="assets/images/profile.jpg" alt="Facundo Allia profile photo" loading="eager" decoding="sync" fetchpriority="high">
-            </div>
-            <div class="hero-content">
-                <h1 class="hero-name">Facundo Joel Allia Fernandez</h1>
-                <h2 class="hero-title" data-en="Data Scientist & Quantitative Finance Specialist" data-es="Científico de Datos y Especialista en Finanzas Cuantitativas">Data Scientist & Quantitative Finance Specialist</h2>
-                
-                <!-- Hero Buttons -->
-                <div class="hero-buttons">
-                    <a href="https://logos-serviciosfinancieros.com.ar" target="_blank" class="btn btn-primary" data-en="Financial Advisory" data-es="Asesoría Financiera">Financial Advisory</a>
-                    <a href="consulting.html" class="btn btn-primary" data-en="Consulting Services" data-es="Consulting Services">Consulting Services</a>
-                    <button class="btn btn-secondary calendly-trigger" data-calendly-url="https://calendly.com/facujallia/reunion" data-en="Schedule a Meeting" data-es="Agenda un Espacio Conmigo">Schedule a Meeting</button>
-                </div>
+<nav class="nav" aria-label="Main">
+  <a href="#about"><span lang="en">About</span><span lang="es">Perfil</span></a>
+  <a href="#projects"><span lang="en">Projects</span><span lang="es">Proyectos</span></a>
+  <a href="#experience"><span lang="en">Experience</span><span lang="es">Experiencia</span></a>
+  <a href="#stack">Stack</a>
+  <a href="#education"><span lang="en">Education</span><span lang="es">Formación</span></a>
+  <a href="consulting.html"><span lang="en">Consulting</span><span lang="es">Consultoría</span></a>
+  <a class="narrow-only" href="#contact"><span lang="en">Contact</span><span lang="es">Contacto</span></a>
+  <button id="lang-toggle" type="button">ES</button>
+</nav>
 
-                <!-- Social Media Links -->
-                <div class="hero-social-links" style="justify-content: flex-start;">
-                    <a href="https://www.linkedin.com/in/facundoalliafernandez/" target="_blank" class="social-link" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    </a>
-                    <a href="https://github.com/facundoallia" target="_blank" class="social-link" aria-label="GitHub">
-                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    </a>
-                    <a href="https://x.com/facundoallia" target="_blank" class="social-link" aria-label="X/Twitter">
-                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
-                    <a href="https://www.youtube.com/@logos.serviciosfinancieros" target="_blank" class="social-link" aria-label="YouTube">
-                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                    </a>
-                    <a href="https://www.instagram.com/logos.inversiones/" target="_blank" class="social-link" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                    </a>
-                    <a href="https://www.tiktok.com/@facundoallia" target="_blank" class="social-link" aria-label="TikTok">
-                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-                    </a>
-                    <a href="https://medium.com/@facujallia" target="_blank" class="social-link" aria-label="Medium">
-                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
-                    </a>
-                    <a href="https://t.me/logoserviciosfinancieros" target="_blank" class="social-link" aria-label="Telegram">
-                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+<main id="main">
+<header class="hero wide" id="about">
+  <img class="portrait" src="assets/img/portrait.webp" width="1100" height="1467" alt="Facundo Allia Fernandez" fetchpriority="high">
+  <div class="hero-copy">
+    <h1>Facundo Allia Fernandez</h1>
+    <p class="typed" data-en="Data Scientist. AI and Data Engineer. Quant background." data-es="Científico de datos. Ingeniero de IA y datos. Base cuantitativa."><span class="typed-text"><span lang="en">Data Scientist. AI and Data Engineer. Quant background.</span><span lang="es">Científico de datos. Ingeniero de IA y datos. Base cuantitativa.</span></span><i aria-hidden="true"></i></p>
+    <p class="bio" lang="en">At Santander CIB I build data pipelines, analytical applications and AI use cases, and I act as AI Ambassador. On my own I run LLM pipelines and market applications in production. Finance is my domain: derivatives pricing at PwC and futures and options trading before that.</p>
+    <p class="bio" lang="es">En Santander CIB construyo pipelines de datos, aplicaciones analíticas y casos de uso de IA, y soy AI Ambassador. Por mi cuenta tengo en producción pipelines con LLM y aplicaciones de mercado. Las finanzas son mi dominio: valoración de derivados en PwC y antes trading de futuros y opciones.</p>
+    <div class="acts">
+      <a class="act solid" href="https://calendly.com/facujallia/reunion" data-calendly><span lang="en">Schedule a meeting</span><span lang="es">Agendar una reunión</span></a>
+      <a class="act" href="consulting.html"><span lang="en">Consulting services</span><span lang="es">Servicios de consultoría</span></a>
+      <a class="act" href="https://logos-serviciosfinancieros.com.ar" target="_blank" rel="noopener"><span lang="en">Financial advisory</span><span lang="es">Asesoría financiera</span></a>
+    </div>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/facundoalliafernandez/" target=_blank rel=noopener aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+      <a href="https://github.com/facundoallia" target=_blank rel=noopener aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+      <a href="mailto:facujallia@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M3 3h18a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zm0 3.2V7l9 5.6L21 7v-.8l-9 5.4z"/></svg></a>
+      <a href="https://x.com/facundoallia" target=_blank rel=noopener aria-label="X" title="X"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+      <a href="https://www.youtube.com/@logos.serviciosfinancieros" target=_blank rel=noopener aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>
+      <a href="https://www.instagram.com/logos.inversiones/" target=_blank rel=noopener aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+      <a href="https://www.tiktok.com/@facundoallia" target=_blank rel=noopener aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+      <a href="https://medium.com/@facujallia" target=_blank rel=noopener aria-label="Medium" title="Medium"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg></a>
+      <a href="https://t.me/logoserviciosfinancieros" target=_blank rel=noopener aria-label="Telegram" title="Telegram"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<div class="layout wide">
+<aside class="side" aria-label="Profile details">
+  <section class="panel side-card" id="contact">
+    <h2><span lang="en">Contact</span><span lang="es">Contacto</span></h2>
+    <ul class="contact-list">
+      <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3h18a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zm0 3.2V7l9 5.6L21 7v-.8l-9 5.4z"/></svg><a href="mailto:facujallia@gmail.com">facujallia@gmail.com</a></li>
+      <li><img src="assets/img/flags/ar.svg" alt="" width="20" height="15"><a href="https://wa.me/5493517414245" target="_blank" rel="noopener">+54 9 351 741-4245</a></li>
+      <li><img src="assets/img/flags/es.svg" alt="" width="20" height="15"><a href="https://wa.me/34624695706" target="_blank" rel="noopener">+34 624 69 57 06</a></li>
+    </ul>
+    <a class="act solid" href="assets/docs/Facundo_Allia_CV.pdf" download><span lang="en">Download CV</span><span lang="es">Descargar CV (en inglés)</span></a>
+  </section>
+  <div class="side-rest">
+    <section class="panel side-card" id="stack">
+      <h2><span lang="en">Tech stack and skills</span><span lang="es">Stack tecnológico y habilidades</span></h2>
+<div class="stack-group"><h3><span lang="en">AI</span><span lang="es">IA</span></h3><ul class="chips big"><li><img src="assets/img/tech/claude.svg" alt="" width="16" height="16" loading="lazy">Claude</li><li>LLMs</li><li>Agents</li><li>RAG</li><li><img src="assets/img/tech/mcp.svg" alt="" width="16" height="16" loading="lazy">MCP</li><li>Prompt engineering</li><li>Structured outputs</li><li>Pydantic</li><li>NLP</li></ul></div>
+<div class="stack-group"><h3><span lang="en">Data engineering</span><span lang="es">Ingeniería de datos</span></h3><ul class="chips big"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/azuresqldatabase.svg" alt="" width="16" height="16" loading="lazy">SQL</li><li><img src="assets/img/tech/apachespark.svg" alt="" width="16" height="16" loading="lazy">PySpark</li><li><img src="assets/img/tech/databricks.svg" alt="" width="16" height="16" loading="lazy">Databricks</li><li>ETL/ELT</li><li><img src="assets/img/tech/azure.svg" alt="" width="16" height="16" loading="lazy">Azure</li><li><img src="assets/img/tech/amazonwebservices.svg" alt="" width="16" height="16" loading="lazy">AWS</li><li><img src="assets/img/tech/docker.svg" alt="" width="16" height="16" loading="lazy">Docker</li><li><img src="assets/img/tech/githubactions.svg" alt="" width="16" height="16" loading="lazy">GitHub Actions</li><li>CI/CD</li><li><img src="assets/img/tech/git.svg" alt="" width="16" height="16" loading="lazy">Git</li><li><img src="assets/img/tech/cloudflare.svg" alt="" width="16" height="16" loading="lazy">Cloudflare Workers</li></ul></div>
+<div class="stack-group"><h3><span lang="en">Data science</span><span lang="es">Ciencia de datos</span></h3><ul class="chips big"><li><img src="assets/img/tech/pandas.svg" alt="" width="16" height="16" loading="lazy">pandas</li><li><img src="assets/img/tech/numpy.svg" alt="" width="16" height="16" loading="lazy">NumPy</li><li><img src="assets/img/tech/scipy.svg" alt="" width="16" height="16" loading="lazy">SciPy</li><li><img src="assets/img/tech/scikitlearn.svg" alt="" width="16" height="16" loading="lazy">scikit-learn</li><li><img src="assets/img/tech/tensorflow.svg" alt="" width="16" height="16" loading="lazy">TensorFlow</li><li>LightGBM</li><li>Prophet</li><li>statsmodels</li><li>Time series forecasting</li><li><img src="assets/img/tech/r.svg" alt="" width="16" height="16" loading="lazy">R</li><li><img src="assets/img/tech/cplusplus.svg" alt="" width="16" height="16" loading="lazy">C++</li><li><img src="assets/img/tech/powerbi.svg" alt="" width="16" height="16" loading="lazy">Power BI</li></ul></div>
+<div class="stack-group"><h3><span lang="en">Applications</span><span lang="es">Aplicaciones</span></h3><ul class="chips big"><li><img src="assets/img/tech/nextjs.svg" alt="" width="16" height="16" loading="lazy">Next.js</li><li><img src="assets/img/tech/react.svg" alt="" width="16" height="16" loading="lazy">React</li><li><img src="assets/img/tech/typescript.svg" alt="" width="16" height="16" loading="lazy">TypeScript</li><li><img src="assets/img/tech/fastapi.svg" alt="" width="16" height="16" loading="lazy">FastAPI</li><li><img src="assets/img/tech/sqlite.svg" alt="" width="16" height="16" loading="lazy">SQLite</li><li><img src="assets/img/tech/vercel.svg" alt="" width="16" height="16" loading="lazy">Vercel</li><li>pytest</li><li>Playwright</li><li><img src="assets/img/tech/github.svg" alt="" width="16" height="16" loading="lazy">GitHub</li></ul></div>
+<div class="stack-group"><h3><span lang="en">Quant and markets</span><span lang="es">Quant y mercados</span></h3><ul class="chips big"><li>Monte Carlo</li><li>Stochastic models</li><li>XVA</li><li>Backtesting</li><li>Bloomberg</li><li>Reuters</li><li>Murex</li><li><img src="assets/img/tech/tradingview.svg" alt="" width="16" height="16" loading="lazy">TradingView</li></ul></div>
     </section>
-
-    <!-- Main Two-Column Grid Layout -->
-    <div class="main-grid">
-        <!-- Left Column (Sidebar) -->
-        <aside class="left-column">
-            <!-- Contact Card -->
-            <div id="contact" class="card contact-card">
-                <h3 class="card-title" data-en="Contact" data-es="Contacto">Contact</h3>
-                <ul class="contact-list">
-                    <li>
-                        <span class="icon">✉️</span>
-                        <a href="mailto:facujallia@gmail.com">facujallia@gmail.com</a>
-                    </li>
-                    <li style="display: flex; align-items: center; gap: 0.5rem;">
-                        <span class="icon" style="min-width: 80px;">📱 🇦🇷</span>
-                        <a href="https://api.whatsapp.com/send?phone=543517414245&text=Hola%2C%20" target="_blank">+54 9 351 741-4245</a>
-                    </li>
-                    <li style="display: flex; align-items: center; gap: 0.5rem;">
-                        <span class="icon" style="min-width: 80px;">📱 🇪🇸</span>
-                        <a href="https://api.whatsapp.com/send?phone=34624695706&text=Hola%2C%20" target="_blank">+34 624 69 57 06</a>
-                    </li>
-                </ul>
-                <div class="cv-download">
-                    <a href="assets/docs/FACUNDO JOEL ALLIA FERNANDEZ 2026 ENGLISH.pdf" download class="btn btn-primary" data-en="Download CV" data-es="Descargar CV">Download CV</a>
-                </div>
-            </div>
-
-            <!-- Tech Stack Card -->
-            <div class="card tech-stack-card">
-                <h3 class="card-title" data-en="Tech Stack & Skills" data-es="Stack Tecnológico y Habilidades">Tech Stack & Skills</h3>
-                <div class="tech-stack-container">
-                    <div class="tech-category">
-                        <h4 class="tech-category-title" data-en="Programming & Data" data-es="Programación y Datos">Programming & Data</h4>
-                        <div class="skill-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Numpy</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">SciPy</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Scikit-Learn</span>
-                            <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">Matplotlib</span>
-                            <span class="tech-tag">Seaborn</span>
-                            <span class="tech-tag">Plotly</span>
-                            <span class="tech-tag">R</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">PySpark</span>
-                            <span class="tech-tag">Machine Learning</span>
-                            <span class="tech-tag">Jupyter</span>
-                        </div>
-                    </div>
-                    <div class="tech-category">
-                        <h4 class="tech-category-title" data-en="Cloud & Infrastructure" data-es="Nube e Infraestructura">Cloud & Infrastructure</h4>
-                        <div class="skill-tags">
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Azure</span>
-                            <span class="tech-tag">Databricks</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Git</span>
-                            <span class="tech-tag">GitHub</span>
-                            <span class="tech-tag">Terminal</span>
-                            <span class="tech-tag">APIs</span>
-                        </div>
-                    </div>
-                    <div class="tech-category">
-                        <h4 class="tech-category-title" data-en="Financial Tools" data-es="Herramientas Financieras">Financial Tools</h4>
-                        <div class="skill-tags">
-                            <span class="tech-tag">Bloomberg Terminal</span>
-                            <span class="tech-tag">Reuters Terminal</span>
-                            <span class="tech-tag">Murex</span>
-                            <span class="tech-tag">Financial Modeling</span>
-                            <span class="tech-tag">Time Series Forecasting</span>
-                            <span class="tech-tag">Risk Analytics</span>
-                            <span class="tech-tag">Financial Valuations</span>
-                            <span class="tech-tag" data-en="Probability & Statistics" data-es="Probabilidad y Estadística">Probability & Statistics</span>
-                        </div>
-                    </div>
-                    <div class="tech-category">
-                        <h4 class="tech-category-title" data-en="Business Intelligence" data-es="Inteligencia de Negocios">Business Intelligence</h4>
-                        <div class="skill-tags">
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">Power Automate</span>
-                            <span class="tech-tag">Power Apps</span>
-                            <span class="tech-tag">Microsoft Office</span>
-                            <span class="tech-tag">SAP</span>
-                        </div>
-                    </div>
-                    <div class="tech-category">
-                        <h4 class="tech-category-title" data-en="Emerging Technologies" data-es="Tecnologías Emergentes">Emerging Technologies</h4>
-                        <div class="skill-tags">
-                            <span class="tech-tag">Blockchain</span>
-                            <span class="tech-tag">Cryptocurrencies</span>
-                            <span class="tech-tag">DeFi</span>
-                            <span class="tech-tag">LLMs</span>
-                            <span class="tech-tag">AI Agents</span>
-                            <span class="tech-tag">RAGs</span>
-                        </div>
-                    </div>
-                    <div class="tech-category">
-                        <h4 class="tech-category-title" data-en="Soft Skills" data-es="Habilidades Blandas">Soft Skills</h4>
-                        <div class="skill-tags">
-                            <span class="tech-tag" data-en="Critical Analysis" data-es="Análisis Crítico">Critical Analysis</span>
-                            <span class="tech-tag" data-en="Problem Solving" data-es="Resolución de Problemas">Problem Solving</span>
-                            <span class="tech-tag" data-en="Teamwork" data-es="Trabajo en Equipo">Teamwork</span>
-                            <span class="tech-tag" data-en="Communication" data-es="Comunicación">Communication</span>
-                            <span class="tech-tag" data-en="Negotiation" data-es="Negociación">Negotiation</span>
-                            <span class="tech-tag" data-en="Attention to Detail" data-es="Atención al Detalle">Attention to Detail</span>
-                            <span class="tech-tag" data-en="Work Under Pressure" data-es="Trabajo Bajo Presión">Work Under Pressure</span>
-                            <span class="tech-tag" data-en="Adaptability" data-es="Adaptabilidad">Adaptability</span>
-                            <span class="tech-tag" data-en="Self-Learning" data-es="Autoaprendizaje">Self-Learning</span>
-                            <span class="tech-tag" data-en="Results-Oriented" data-es="Orientado a Resultados">Results-Oriented</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Education Card -->
-            <div id="education" class="card">
-                <h3 class="card-title" data-en="Education" data-es="Formación">Education</h3>
-                <div class="education-list">
-                    <div class="education-item">
-                        <h4 data-en="Master's in Finance" data-es="Máster en Finanzas">Master's in Finance</h4>
-                        <p class="education-school">EAE Business School Madrid</p>
-                        <p class="education-year">2024</p>
-                    </div>
-                    <div class="education-item">
-                        <h4 data-en="Postgraduate in Quantitative Finance" data-es="Posgrado en Finanzas Cuantitativas">Postgraduate in Quantitative Finance</h4>
-                        <p class="education-school">UCEMA</p>
-                        <p class="education-year">2022</p>
-                    </div>
-                    <div class="education-item">
-                        <h4 data-en="Financial Markets Specialization (Derivatives Trading Focus)" data-es="Especialización en Mercados Financieros (Trading de Derivados)">Financial Markets Specialization (Derivatives Trading Focus)</h4>
-                        <p class="education-school">Bolsa de Comercio de Rosario</p>
-                        <p class="education-year">2021</p>
-                    </div>
-                    <div class="education-item">
-                        <h4 data-en="Data Science Bootcamp (+700h)" data-es="Bootcamp de Ciencia de Datos (+700h)">Data Science Bootcamp (+700h)</h4>
-                        <p class="education-school">Henry</p>
-                        <p class="education-year">2022</p>
-                    </div>
-                    <div class="education-item">
-                        <h4 data-en="Bachelor of Business Administration" data-es="Licenciatura en Administración">Bachelor of Business Administration</h4>
-                        <p class="education-school" data-en="Universidad Nacional de Córdoba - Finance Specialization" data-es="Universidad Nacional de Córdoba - Especialización en Finanzas">Universidad Nacional de Córdoba - Finance Specialization</p>
-                        <p class="education-year">2020</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Certifications, Languages & Courses Card -->
-            <div class="card certifications-card">
-                <h3 class="card-title" data-en="Certifications, Languages & Courses" data-es="Certificaciones, Idiomas y Cursos">Certifications, Languages & Courses</h3>
-                
-                <div class="cert-section">
-                    <h4 class="cert-subtitle" data-en="Professional Certifications" data-es="Certificaciones Profesionales">Professional Certifications</h4>
-                    <ul class="cert-list">
-                        <li data-en="Stock Market Producer regulated by Argentina's National Securities Commission — Registration Nº 1271" data-es="Agente Productor regulado por la Comisión Nacional de Valores (Argentina) — Matrícula Nº 1271">Stock Market Producer regulated by Argentina's National Securities Commission — Registration Nº 1271</li>
-                    </ul>
-                </div>
-
-                <div class="cert-section">
-                    <h4 class="cert-subtitle" data-en="Languages" data-es="Idiomas">Languages</h4>
-                    <ul class="cert-list">
-                        <li data-en="Spanish: Native" data-es="Español: Nativo"><strong data-en="Spanish:" data-es="Español:">Spanish:</strong> Native</li>
-                        <li data-en="English: Professional Proficiency (C2) — EF SET Certificate 77/100, Cambridge Business English Certificate Vantage (B2)" data-es="Inglés: Dominio Profesional (C2) — EF SET Certificado 77/100, Cambridge Business English Certificate Vantage (B2)"><strong data-en="English:" data-es="Inglés:">English:</strong> Professional Proficiency (C2) — EF SET Certificate 77/100, Cambridge Business English Certificate Vantage (B2)</li>
-                        <li data-en="Portuguese: Basic (A2)" data-es="Portugués: Básico (A2)"><strong data-en="Portuguese:" data-es="Portugués:">Portuguese:</strong> Basic (A2)</li>
-                    </ul>
-                </div>
-
-                <div class="cert-section courses-section">
-                    <h4 class="cert-subtitle" data-en="Courses and Certifications" data-es="Cursos y Certificaciones">Courses and Certifications</h4>
-                    <ul class="cert-list">
-                        <li>Cloud Practitioner Essentials - AWS</li>
-                        <li data-en="Time Series Forecasting - Kaggle" data-es="Forecasting de Series Temporales - Kaggle">Time Series Forecasting - Kaggle</li>
-                        <li data-en="Strategic Thinking - CAME" data-es="Pensamiento Estratégico - CAME">Strategic Thinking - CAME</li>
-                        <li data-en="Digital Disruption in Finance - UNC" data-es="Disrupción Digital en Finanzas - UNC">Digital Disruption in Finance - UNC</li>
-                        <li data-en="Personal Brand - Platzi" data-es="Marca Personal - Platzi">Personal Brand - Platzi</li>
-                        <li data-en="Regulatory Consulting - PWC" data-es="Consultoría Regulatoria - PWC">Regulatory Consulting - PWC</li>
-                        <li data-en="Harvard Negotiation Method - IEP" data-es="Método de Negociación Harvard - IEP">Harvard Negotiation Method - IEP</li>
-                        <li>PLAFT - Balanz University</li>
-                        <li data-en="Digital Marketing Strategies - CAME" data-es="Estrategias de Marketing Digital - CAME">Digital Marketing Strategies - CAME</li>
-                        <li data-en="Personal Finance - UNAM" data-es="Finanzas Personales - UNAM">Personal Finance - UNAM</li>
-                        <li data-en="Python for Finance, Investment & Data Analytics - Udemy" data-es="Python para Finanzas, Inversión y Analítica de Datos - Udemy">Python for Finance, Investment & Data Analytics - Udemy</li>
-                        <li data-en="Advanced Excel - IPAP" data-es="Excel Avanzado - IPAP">Advanced Excel - IPAP</li>
-                    </ul>
-                </div>
-            </div>
-        </aside>
-
-        <!-- Right Column (Main Content) -->
-        <main class="right-column">
-            <!-- About Section -->
-            <section id="about" class="card">
-                <h2 class="card-title" data-en="About Me" data-es="Sobre Mí">About Me</h2>
-                <p class="about-text" data-en="Data Scientist and Python Developer with 7+ years bridging advanced analytics, machine learning, and financial engineering. Specialized in building production-grade data solutions from ETL pipelines and automated systems to pricing models and risk analytics. Expert in Python, SQL, and cloud platforms with proven track record transforming complex financial data into actionable insights across Big Four firms, investment banking, and derivatives markets. Combines deep quantitative finance expertise with modern ML/AI implementation and scalable data architecture." data-es="Científico de Datos y Desarrollador Python con más de 7 años de experiencia integrando analítica avanzada, machine learning e ingeniería financiera. Especializado en construcción de soluciones de datos de nivel producción desde pipelines ETL y sistemas automatizados hasta modelos de pricing y análisis de riesgo. Experto en Python, SQL y plataformas cloud con trayectoria comprobada transformando datos financieros complejos en insights accionables en firmas Big Four, banca de inversión y mercados de derivados. Combina profunda experiencia en finanzas cuantitativas con implementación moderna de ML/AI y arquitectura de datos escalable.">Data Scientist and Python Developer with 7+ years bridging advanced analytics, machine learning, and financial engineering. Specialized in building production-grade data solutions from ETL pipelines and automated systems to pricing models and risk analytics. Expert in Python, SQL, and cloud platforms with proven track record transforming complex financial data into actionable insights across Big Four firms, investment banking, and derivatives markets. Combines deep quantitative finance expertise with modern ML/AI implementation and scalable data architecture.</p>
-            </section>
-
-            <!-- Projects Section -->
-            <section id="projects" class="card">
-                <h2 class="card-title" data-en="Projects and Publications" data-es="Proyectos y Publicaciones">Projects and Publications</h2>
-                <div class="projects-container">
-                <!-- Project 1: REM BCRA API — End-to-end data engineering -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="assets/images/rem-bcra-api.svg" alt="REM BCRA API" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">rem-bcra-api</h3>
-                        <p class="project-description" data-en="Open-source REST API for Argentina's Market Expectations Survey (REM BCRA). Automated pipeline that fetches, normalizes, and serves macroeconomic forecasts via Cloudflare Workers with no authentication required." data-es="API REST open-source para el Relevamiento de Expectativas de Mercado (REM) del BCRA. Pipeline automatizado que descarga, normaliza y sirve pronósticos macroeconómicos vía Cloudflare Workers sin autenticación.">Open-source REST API for Argentina's Market Expectations Survey (REM BCRA). Automated pipeline that fetches, normalizes, and serves macroeconomic forecasts via Cloudflare Workers with no authentication required.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Cloudflare Workers</span>
-                            <span class="tech-tag">REST API</span>
-                            <span class="tech-tag">GitHub Actions</span>
-                            <span class="tech-tag">Pandas</span>
-                        </div>
-                        <a href="https://github.com/facundoallia/rem-bcra-api" target="_blank" class="project-link">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Project 2: Carry Trade Analyzer v3 — Full-stack app -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="assets/images/carry-trade-analyzer.png" alt="Carry Trade Analyzer" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">carry-trade-analyzer</h3>
-                        <p class="project-description" data-en="Carry trade analyzer v3.0 for Argentine bonds. Features dynamic currency band model with real-time REM inflation integration, FastAPI backend, and interactive web dashboard with auto-refresh." data-es="Analizador de carry trade v3.0 para bonos argentinos. Modelo dinámico de bandas cambiarias con integración de inflación REM en tiempo real, backend FastAPI y dashboard web interactivo con auto-actualización.">Carry trade analyzer v3.0 for Argentine bonds. Features dynamic currency band model with real-time REM inflation integration, FastAPI backend, and interactive web dashboard with auto-refresh.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Quantitative Finance</span>
-                        </div>
-                        <a href="https://github.com/facundoallia/carry-trade-analyzer" target="_blank" class="project-link">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Project 3: Trading Screener — Most GitHub stars -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="assets/images/Trading-Screener-with-Python-and-Tradingview.webp" alt="Trading Screener with Python and TradingView" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Trading-Screener-with-Python-and-Tradingview</h3>
-                        <p class="project-description" data-en="Advanced trading screener combining Python analytics with TradingView integration." data-es="Screener avanzado de trading combinando análisis en Python con integración de TradingView.">Advanced trading screener combining Python analytics with TradingView integration.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TradingView</span>
-                            <span class="tech-tag">Trading</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/facundoallia/Trading-Screener-with-Python-and-Tradingview" target="_blank" class="project-link">View on GitHub →</a>
-                            <a href="https://medium.com/@facujallia/building-an-effective-trading-screener-with-python-and-tradingview-9329db9afaa9" target="_blank" class="project-link">View on Medium →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: Calendar Spread TSF — ML/Quant forecasting -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="assets/images/calendar-spread-time-series-forecasting.webp" alt="Calendar Spread Time Series Forecasting" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">calendar-spread-time-series-forecasting</h3>
-                        <p class="project-description" data-en="Time series forecasting applied to Argentine corn calendar spreads." data-es="Forecasting aplicado a spreads del maíz argentino usando series temporales.">Time series forecasting applied to Argentine corn calendar spreads.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Time Series</span>
-                            <span class="tech-tag">Forecasting</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/facundoallia/calendar-spread-time-series-forecasting" target="_blank" class="project-link">View on GitHub →</a>
-                            <a href="https://medium.com/@facujallia/unleashing-the-power-of-time-series-forecasting-in-calendar-spread-strategies-an-application-in-2cc568933f3a" target="_blank" class="project-link">View on Medium →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: Elon Musk / Dogecoin — NLP + Econometrics -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="assets/images/Exploring-the-Relationship-between-Elon-Musk-Tweets-and-Dogecoin-Volatility.webp" alt="Elon Musk Tweets and Dogecoin Volatility Analysis" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Exploring-the-Relationship-between-Elon-Musk-Tweets-and-Dogecoin-Volatility</h3>
-                        <p class="project-description" data-en="NLP and econometric analysis of social media impact on cryptocurrency markets." data-es="Análisis de NLP y econometría del impacto de redes sociales en mercados de criptomonedas.">NLP and econometric analysis of social media impact on cryptocurrency markets.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">NLP</span>
-                            <span class="tech-tag">Crypto</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/facundoallia/Exploring-the-Relationship-between-Elon-Musk-Tweets-and-Dogecoin-Volatility" target="_blank" class="project-link">View on GitHub →</a>
-                            <a href="https://medium.com/@facujallia/tweet-trade-profit-exploring-the-relationship-between-elon-musks-tweets-and-dogecoin-volatility-7da28ee9aead" target="_blank" class="project-link">View on Medium →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6: Stock Screener — Client project -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="assets/images/Stock-screener.png" alt="Stock Screener" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Stock-screener</h3>
-                        <p class="project-description" data-en="Quantitative screener developed for a client. Private project showcased via LinkedIn." data-es="Screener cuantitativo desarrollado para un cliente. Proyecto privado mostrado en LinkedIn.">Quantitative screener developed for a client. Private project showcased via LinkedIn.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Private Project</span>
-                        </div>
-                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7234669321493377024/" target="_blank" class="project-link">View LinkedIn Post →</a>
-                    </div>
-                </div>
-
-                <!-- Project 7: K-means Clustering — ML + SSRN publication -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="assets/images/Stock-classification-using-k-means-clustering.png" alt="Stock Classification using K-means Clustering" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Stock-classification-using-k-means-clustering</h3>
-                        <p class="project-description" data-en="Stock classification for portfolio diversification using k-means clustering." data-es="Clasificación de activos para diversificación de portafolios usando k-means clustering.">Stock classification for portfolio diversification using k-means clustering.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Machine Learning</span>
-                            <span class="tech-tag">Clustering</span>
-                        </div>
-                        <a href="https://github.com/facundoallia/Stock-classification-using-k-means-clustering" target="_blank" class="project-link">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Project 8: Moving Average Crossover — Backtesting -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="assets/images/Maximizing-Profitability-of-Moving-Average-Crossover.webp" alt="Maximizing Profitability of Moving Average Crossover" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Maximizing-Profitability-of-Moving-Average-Crossover</h3>
-                        <p class="project-description" data-en="Optimization of moving average trading strategies through backtesting." data-es="Optimización de estrategias de trading basadas en medias móviles mediante backtesting.">Optimization of moving average trading strategies through backtesting.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Trading Strategy</span>
-                            <span class="tech-tag">Backtesting</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/facundoallia/Maximizing-Profitability-of-Moving-Average-Crossover" target="_blank" class="project-link">View on GitHub →</a>
-                            <a href="https://medium.com/@facujallia/maximizing-profitability-of-moving-average-crossover-trading-strategy-what-moving-averages-to-use-e5cd70085690" target="_blank" class="project-link">View on Medium →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 9: Monthly Returns — Data Analysis -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="assets/images/major-stock-market-indexes-historical-monthly-returns.webp" alt="Major Stock Market Indexes Historical Analysis" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">major-stock-market-indexes-historical-monthly-returns</h3>
-                        <p class="project-description" data-en="Historical return analysis for major stock market indexes." data-es="Análisis de retornos históricos de los principales índices bursátiles.">Historical return analysis for major stock market indexes.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Jupyter</span>
-                            <span class="tech-tag">Data Analysis</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/facundoallia/major-stock-market-indexes-historical-monthly-returns" target="_blank" class="project-link">View on GitHub →</a>
-                            <a href="https://medium.com/@facujallia/sell-in-may-and-go-away-a-study-of-major-stock-market-indexs-historical-monthly-returns-96cf8ed3df1" target="_blank" class="project-link">View on Medium →</a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <!-- Publications Section -->
-                <div class="publications-section">
-                    <h3 class="subsection-title" data-en="Publications (SSRN)" data-es="Publicaciones (SSRN)">Publications (SSRN)</h3>
-                    
-                    <div class="project-item">
-                        <div class="project-image">
-                            <img src="assets/images/Construction of risk-neutral probability density functions through butterfly spreads.png" alt="Risk-neutral Probability Density Functions" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title" data-en="Construction of risk-neutral probability density functions through butterfly spreads" data-es="Construcción de funciones de densidad de probabilidad neutral al riesgo mediante butterfly spreads">Construction of risk-neutral probability density functions through butterfly spreads</h3>
-                            <p class="project-description" data-en="BCR - June 30, 2022" data-es="BCR - 30 de junio de 2022">BCR - June 30, 2022</p>
-                            <p class="project-author">Allia Fernandez, F. J.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Quantitative Finance</span>
-                                <span class="tech-tag">Options Pricing</span>
-                                <span class="tech-tag">Research</span>
-                            </div>
-                            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4280119" target="_blank" class="project-link">View on SSRN →</a>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project-image">
-                            <img src="assets/images/Stock classification using k-means clustering publicacion.webp" alt="Stock Classification using K-means Clustering Publication" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title" data-en="Stock classification using k-means clustering" data-es="Clasificación de acciones usando k-means clustering">Stock classification using k-means clustering</h3>
-                            <p class="project-description" data-en="UCEMA - December 7, 2022" data-es="UCEMA - 7 de diciembre de 2022">UCEMA - December 7, 2022</p>
-                            <p class="project-author">Allia Fernandez, F. J.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Machine Learning</span>
-                                <span class="tech-tag">Portfolio Management</span>
-                                <span class="tech-tag">Research</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4403662" target="_blank" class="project-link">View on SSRN →</a>
-                                <a href="https://medium.com/@facujallia/stock-classification-using-k-means-clustering-8441f75363de" target="_blank" class="project-link">View on Medium →</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </section>
-
-            <!-- Experience Section -->
-            <section id="experience" class="card">
-                <h2 class="card-title" data-en="Professional Experience" data-es="Experiencia Profesional">Professional Experience</h2>
-                <div class="timeline">
-                <!-- Santander -->
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3 class="timeline-company">Banco Santander Corporate & Investment Banking</h3>
-                        <h4 class="timeline-position">
-                            <span data-en="Data Scientist & Automation Engineer" data-es="Científico de Datos e Ingeniero de Automatización">Data Scientist & Automation Engineer</span>
-                            <span class="timeline-date">2025 - Present</span>
-                        </h4>
-                        <ul class="timeline-responsibilities">
-                            <li data-en="Design and implement scalable data solutions combining Python, SQL, and cloud technologies to optimize financial processes and reduce operational costs." data-es="Diseñar e implementar soluciones de datos escalables combinando Python, SQL y tecnologías en la nube para optimizar procesos financieros y reducir costos operativos.">Design and implement scalable data solutions combining Python, SQL, and cloud technologies to optimize financial processes and reduce operational costs.</li>
-                            <li data-en="Develop automated ETL pipelines and data integration workflows from multiple sources including enterprise systems, data lakes and financial platforms." data-es="Desarrollar pipelines ETL automatizados y flujos de trabajo de integración de datos de múltiples fuentes incluyendo sistemas empresariales, lagos de datos y plataformas financieras.">Develop automated ETL pipelines and data integration workflows from multiple sources including enterprise systems, data lakes and financial platforms.</li>
-                            <li data-en="Build end-to-end applications and analytical tools with interactive dashboards, enabling data-driven decision-making." data-es="Construir aplicaciones de extremo a extremo y herramientas analíticas con dashboards interactivos, habilitando toma de decisiones basada en datos.">Build end-to-end applications and analytical tools with interactive dashboards, enabling data-driven decision-making.</li>
-                            <li data-en="AI Ambassador promoting AI technology adoption across organization, developing use cases and facilitating implementation of AI solutions within business units." data-es="Embajador AI promoviendo adopción de tecnologías AI en la organización, desarrollando casos de uso y facilitando implementación de soluciones AI en unidades de negocio.">AI Ambassador promoting AI technology adoption across organization, developing use cases and facilitating implementation of AI solutions within business units.</li>
-                        </ul>
-                        <div class="timeline-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">Databricks</span>
-                            <span class="tech-tag">Murex</span>
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">Power Automate</span>
-                            <span class="tech-tag">Azure</span>
-                            <span class="tech-tag">ETL/ELT</span>
-                            <span class="tech-tag">RAG/LLMs</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PwC -->
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3 class="timeline-company">PricewaterhouseCoopers (PwC)</h3>
-                        <h4 class="timeline-position">
-                            <span data-en="Quantitative Analyst" data-es="Analista Cuantitativo">Quantitative Analyst</span>
-                            <span class="timeline-date">2024 - 2025</span>
-                        </h4>
-                        <ul class="timeline-responsibilities">
-                            <li data-en="Specialized in complex derivatives pricing using stochastic models and Monte Carlo simulation. Developed credit derivatives valuation engine with Python implementing CVA/DVA frameworks." data-es="Especializado en pricing de derivados complejos usando modelos estocásticos y simulación Monte Carlo. Desarrollar motor de valoración de derivados de crédito con Python implementando frameworks CVA/DVA.">Specialized in complex derivatives pricing using stochastic models and Monte Carlo simulation. Developed credit derivatives valuation engine with Python implementing CVA/DVA frameworks.</li>
-                            <li data-en="Performed market risk assessments and built XVA calculation models for regulatory compliance, collaborating with audit teams on validation frameworks." data-es="Realizar evaluaciones de riesgo de mercado y construir modelos de cálculo XVA para cumplimiento regulatorio, colaborando con equipos de auditoría en frameworks de validación.">Performed market risk assessments and built XVA calculation models for regulatory compliance, collaborating with audit teams on validation frameworks.</li>
-                            <li data-en="Regular contributor to technical newsletter analyzing Decentralized Finance trends and their impact on traditional markets, leveraging blockchain analytics and quantitative research." data-es="Contribuidor regular a newsletter técnico analizando tendencias de Finanzas Descentralizadas y su impacto en mercados tradicionales, aprovechando analítica blockchain e investigación cuantitativa.">Regular contributor to technical newsletter analyzing Decentralized Finance trends and their impact on traditional markets, leveraging blockchain analytics and quantitative research.</li>
-                            <li data-en="Performed scenario analysis and stress testing for financial instruments using Python, R, and proprietary risk systems." data-es="Realizar análisis de escenarios y stress testing para instrumentos financieros usando Python, R y sistemas propietarios de riesgo.">Performed scenario analysis and stress testing for financial instruments using Python, R, and proprietary risk systems.</li>
-                        </ul>
-                        <div class="timeline-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">R</span>
-                            <span class="tech-tag">Excel</span>
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">Azure</span>
-                            <span class="tech-tag">Murex</span>
-                            <span class="tech-tag">Bloomberg Terminal</span>
-                            <span class="tech-tag">Reuters Terminal</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Logos -->
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3 class="timeline-company">Logos Servicios Financieros</h3>
-                        <h4 class="timeline-position">
-                            <span data-en="Financial Advisor & Founder" data-es="Asesor Financiero y Fundador">Financial Advisor & Founder</span>
-                            <span class="timeline-date">2020 - Present</span>
-                        </h4>
-                        <ul class="timeline-responsibilities">
-                            <li data-en="Provide financial advisory services and portfolio management with customized investment strategies." data-es="Proveer servicios de asesoramiento financiero y gestión de carteras con estrategias de inversión personalizadas.">Provide financial advisory services and portfolio management with customized investment strategies.</li>
-                            <li data-en="Established and managed proprietary client portfolio ensuring high-quality service and satisfaction." data-es="Establecer y gestionar cartera de clientes propietaria asegurando servicio y satisfacción de alta calidad.">Established and managed proprietary client portfolio ensuring high-quality service and satisfaction.</li>
-                            <li data-en="Developed interactive tools and educational resources (carry trade analysis, crypto portfolio tracker, investment calculator) for client empowerment." data-es="Desarrollar herramientas interactivas y recursos educativos (análisis carry trade, tracker de cripto, calculadora de inversiones) para empoderamiento del cliente.">Developed interactive tools and educational resources (carry trade analysis, crypto portfolio tracker, investment calculator) for client empowerment.</li>
-                        </ul>
-                        <div class="timeline-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Excel</span>
-                            <span class="tech-tag">Bloomberg Terminal</span>
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">Financial Modeling</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Accenture -->
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3 class="timeline-company">Accenture</h3>
-                        <h4 class="timeline-position">
-                            <span data-en="Financial Data Transition Specialist" data-es="Especialista en Transición de Datos Financieros">Financial Data Transition Specialist</span>
-                            <span class="timeline-date">2022 - 2023</span>
-                        </h4>
-                        <ul class="timeline-responsibilities">
-                            <li data-en="Developed KPIs and financial metrics for enterprise reporting, identifying process optimization opportunities boosting profitability." data-es="Desarrollar KPIs y métricas financieras para reportes empresariales, identificando oportunidades de optimización que impulsan rentabilidad.">Developed KPIs and financial metrics for enterprise reporting, identifying process optimization opportunities boosting profitability.</li>
-                            <li data-en="Implemented forecasting tools and management software improving financial visibility and decision-making." data-es="Implementar herramientas de forecasting y software de gestión mejorando visibilidad financiera y toma de decisiones.">Implemented forecasting tools and management software improving financial visibility and decision-making.</li>
-                            <li data-en="Worked with SAP HANA and cloud platforms for large-scale data integration and analytics." data-es="Trabajar con SAP HANA y plataformas cloud para integración de datos y analítica a gran escala.">Worked with SAP HANA and cloud platforms for large-scale data integration and analytics.</li>
-                        </ul>
-                        <div class="timeline-tech">
-                            <span class="tech-tag">SAP</span>
-                            <span class="tech-tag">SAP HANA</span>
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Azure</span>
-                            <span class="tech-tag">Excel</span>
-                            <span class="tech-tag">SharePoint</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Nixtla -->
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3 class="timeline-company">Nixtla</h3>
-                        <h4 class="timeline-position">
-                            <span data-en="Data Scientist" data-es="Científico de Datos">Data Scientist</span>
-                            <span class="timeline-date">2022</span>
-                        </h4>
-                        <ul class="timeline-responsibilities">
-                            <li data-en="Performed time series forecasting and modeling (ARIMA, ETS, CES) using Python and R for predictive analytics." data-es="Realizar forecasting y modelado de series temporales (ARIMA, ETS, CES) usando Python y R para analítica predictiva.">Performed time series forecasting and modeling (ARIMA, ETS, CES) using Python and R for predictive analytics.</li>
-                            <li data-en="Developed automated forecasting pipelines on Databricks with PySpark for scalable model deployment." data-es="Desarrollar pipelines automatizados de forecasting en Databricks con PySpark para despliegue escalable de modelos.">Developed automated forecasting pipelines on Databricks with PySpark for scalable model deployment.</li>
-                            <li data-en="Authored technical documentation and conducted model performance evaluations ensuring optimal accuracy." data-es="Autor de documentación técnica y realizar evaluaciones de rendimiento de modelos asegurando precisión óptima.">Authored technical documentation and conducted model performance evaluations ensuring optimal accuracy.</li>
-                        </ul>
-                        <div class="timeline-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">R</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">PySpark</span>
-                            <span class="tech-tag">Databricks</span>
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">APIs</span>
-                            <span class="tech-tag">Git/GitHub</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Matba Rofex -->
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3 class="timeline-company">Matba Rofex</h3>
-                        <h4 class="timeline-position">
-                            <span data-en="Institutional Derivatives Trader - Market Making" data-es="Trader Institucional de Derivados - Market Making">Institutional Derivatives Trader - Market Making</span>
-                            <span class="timeline-date">2021 - 2023</span>
-                        </h4>
-                        <ul class="timeline-responsibilities">
-                            <li data-en="Actively traded futures and options on financial assets and commodities, managing market-funded account to meet volume standards." data-es="Negociar activamente futuros y opciones sobre activos financieros y commodities, gestionando cuenta financiada por el mercado para cumplir estándares de volumen.">Actively traded futures and options on financial assets and commodities, managing market-funded account to meet volume standards.</li>
-                            <li data-en="Demonstrated strong quantitative skills forecasting market trends, consistently outperforming benchmark for two consecutive years." data-es="Demostrar fuertes habilidades cuantitativas pronosticando tendencias de mercado, superando consistentemente el benchmark durante dos años consecutivos.">Demonstrated strong quantitative skills forecasting market trends, consistently outperforming benchmark for two consecutive years.</li>
-                            <li data-en="Developed Python-based trading analytics and backtesting frameworks for strategy optimization." data-es="Desarrollar analítica de trading basada en Python y frameworks de backtesting para optimización de estrategias.">Developed Python-based trading analytics and backtesting frameworks for strategy optimization.</li>
-                        </ul>
-                        <div class="timeline-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">APIs</span>
-                            <span class="tech-tag">Trading platforms</span>
-                            <span class="tech-tag">TradingView</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Libertad S.A. -->
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3 class="timeline-company">Libertad S.A.</h3>
-                        <h4 class="timeline-position">
-                            <span data-en="Commercial Data Analyst" data-es="Analista de Datos Comerciales">Commercial Data Analyst</span>
-                            <span class="timeline-date">2021 - 2022</span>
-                        </h4>
-                        <ul class="timeline-responsibilities">
-                            <li data-en="Developed monthly and annual budgets with demand forecasts incorporating macroeconomic variables via interactive dashboards." data-es="Desarrollar presupuestos mensuales y anuales con pronósticos de demanda incorporando variables macroeconómicas mediante dashboards interactivos.">Developed monthly and annual budgets with demand forecasts incorporating macroeconomic variables via interactive dashboards.</li>
-                            <li data-en="Implemented real-time sales data ingestion and analysis solution at scale, adding significant operational value." data-es="Implementar solución de ingesta y análisis de datos de ventas en tiempo real a escala, agregando valor operacional significativo.">Implemented real-time sales data ingestion and analysis solution at scale, adding significant operational value.</li>
-                            <li data-en="Collaborated with cross-functional teams to optimize inventory management and sales performance tracking." data-es="Colaborar con equipos interfuncionales para optimizar gestión de inventario y seguimiento de desempeño de ventas.">Collaborated with cross-functional teams to optimize inventory management and sales performance tracking.</li>
-                        </ul>
-                        <div class="timeline-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">SAP</span>
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">Excel</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Peugeot -->
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3 class="timeline-company">Peugeot Avant Autocity</h3>
-                        <h4 class="timeline-position">
-                            <span data-en="Data Analyst" data-es="Analista de Datos">Data Analyst</span>
-                            <span class="timeline-date">2019</span>
-                        </h4>
-                        <ul class="timeline-responsibilities">
-                            <li data-en="Maintained and structured operational databases using SQL, Excel, SAP and proprietary ERP/CRM systems." data-es="Mantener y estructurar bases de datos operativas usando SQL, Excel, SAP y sistemas ERP/CRM propietarios.">Maintained and structured operational databases using SQL, Excel, SAP and proprietary ERP/CRM systems.</li>
-                            <li data-en="Built dashboards and performance reports supporting business decisions and operational efficiency improvements." data-es="Construir dashboards y reportes de desempeño que apoyan decisiones empresariales y mejoras de eficiencia operacional.">Built dashboards and performance reports supporting business decisions and operational efficiency improvements.</li>
-                            <li data-en="Automated routine data extraction and transformation processes reducing manual workload." data-es="Automatizar procesos rutinarios de extracción y transformación de datos reduciendo carga de trabajo manual.">Automated routine data extraction and transformation processes reducing manual workload.</li>
-                        </ul>
-                        <div class="timeline-tech">
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">Excel</span>
-                            <span class="tech-tag">SAP</span>
-                            <span class="tech-tag">Power BI</span>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </section>
-        </main>
+    <section class="panel side-card" id="education">
+      <h2><span lang="en">Education</span><span lang="es">Formación</span></h2>
+      <ul class="rows">
+        <li><span class="mini"><img src="assets/img/logos/upm.webp" alt="Universidad Politécnica de Madrid" loading="lazy"></span><span class="edu-title"><strong><span lang="en">Postgraduate programme in Quantitative Systems and Models for Algorithmic Trading</span><span lang="es">Posgrado en Sistemas y Modelos Cuantitativos de Trading Algorítmico</span></strong><span class="org">Universidad Politécnica de Madrid, 2027</span></span></li>
+        <li><span class="mini"><img src="assets/img/logos/eae.png" alt="EAE Business School" loading="lazy"></span><span class="edu-title"><strong><span lang="en">Master's in Finance</span><span lang="es">Máster en Finanzas</span></strong><span class="org">EAE Business School, Madrid, 2024</span></span></li>
+        <li><span class="mini"><img src="assets/img/logos/ucema.svg" alt="UCEMA" loading="lazy"></span><span class="edu-title"><strong><span lang="en">Postgraduate degree in Quantitative Finance</span><span lang="es">Posgrado en Finanzas Cuantitativas</span></strong><span class="org">UCEMA, 2022</span></span></li>
+        <li><span class="mini"><img src="assets/img/logos/henry.svg" alt="Henry" loading="lazy"></span><span class="edu-title"><strong><span lang="en">Data Science Bootcamp, over 700 hours</span><span lang="es">Bootcamp de Ciencia de Datos, más de 700 horas</span></strong><span class="org">Henry, 2022</span></span></li>
+        <li><span class="mini"><img src="assets/img/logos/bcr.svg" alt="Bolsa de Comercio de Rosario" loading="lazy"></span><span class="edu-title"><strong><span lang="en">Financial Markets Specialization</span><span lang="es">Especialización en Mercados Financieros</span></strong><span class="org">Bolsa de Comercio de Rosario, 2021</span></span></li>
+        <li><span class="mini"><img src="assets/img/logos/unc.png" alt="Universidad Nacional de Córdoba" loading="lazy"></span><span class="edu-title"><strong><span lang="en">Bachelor of Business Administration, Finance</span><span lang="es">Licenciatura en Administración, orientación Finanzas</span></strong><span class="org">Universidad Nacional de Córdoba, 2020</span></span></li>
+      </ul>
+    </section>
+    <section class="panel side-card" id="languages">
+      <h2><span lang="en">Languages</span><span lang="es">Idiomas</span></h2>
+      <ul class="langs">
+    <li><img src="assets/img/flags/ar.svg" alt="" width="40" height="30"><span><strong><span lang="en">Spanish</span><span lang="es">Español</span></strong><span class="org"><span lang="en">Native</span><span lang="es">Nativo</span></span></span></li>
+    <li><img src="assets/img/flags/gb.svg" alt="" width="40" height="30"><span><strong><span lang="en">English</span><span lang="es">Inglés</span></strong><span class="org"><span lang="en">Advanced. EF SET 77/100 (C2), Cambridge Vantage (B2)</span><span lang="es">Avanzado. EF SET 77/100 (C2), Cambridge Vantage (B2)</span></span></span></li>
+    <li><img src="assets/img/flags/br.svg" alt="" width="40" height="30"><span><strong><span lang="en">Portuguese</span><span lang="es">Portugués</span></strong><span class="org"><span lang="en">Basic (A2)</span><span lang="es">Básico (A2)</span></span></span></li>
+  </ul>
+    </section>
+    <section class="panel side-card" id="courses">
+      <h2><span lang="en">Courses and certifications</span><span lang="es">Cursos y certificaciones</span></h2>
+      <ul class="rows"><li><span class="mini"><img src="assets/img/logos/cnv.png" alt="Comisión Nacional de Valores" loading="lazy"></span><span class="edu-title"><strong><span lang="en">Stock Market Producer (Agente Productor), Registration Nº 1271</span><span lang="es">Agente Productor, matrícula Nº 1271</span></strong><span class="org">Comisión Nacional de Valores, 2021</span></span></li></ul>
+      <ul class="courses">
+        <li>Cloud Practitioner Essentials<span class="org">AWS</span></li>
+        <li><span lang="en">Time Series Forecasting</span><span lang="es">Forecasting de series temporales</span><span class="org">Kaggle</span></li>
+        <li><span lang="en">Python for Finance, Investment and Data Analytics</span><span lang="es">Python para finanzas, inversión y análisis de datos</span><span class="org">Udemy</span></li>
+        <li><span lang="en">Digital Disruption in Finance</span><span lang="es">Disrupción digital en finanzas</span><span class="org">UNC</span></li>
+        <li><span lang="en">Regulatory Consulting</span><span lang="es">Consultoría regulatoria</span><span class="org">PwC</span></li>
+        <li><span lang="en">Anti-Money Laundering (PLAFT)</span><span lang="es">Prevención de lavado de activos (PLAFT)</span><span class="org">Balanz University</span></li>
+        <li><span lang="en">Harvard Negotiation Method</span><span lang="es">Método de negociación de Harvard</span><span class="org">IEP</span></li>
+        <li><span lang="en">Strategic Thinking</span><span lang="es">Pensamiento estratégico</span><span class="org">CAME</span></li>
+        <li><span lang="en">Advanced Excel</span><span lang="es">Excel avanzado</span><span class="org">IPAP</span></li>
+        <li><span lang="en">Digital Marketing Strategies</span><span lang="es">Estrategias de marketing digital</span><span class="org">CAME</span></li>
+        <li><span lang="en">Personal Finance</span><span lang="es">Finanzas personales</span><span class="org">UNAM</span></li>
+        <li><span lang="en">Personal Brand</span><span lang="es">Marca personal</span><span class="org">Platzi</span></li>
+      </ul>
+    </section>
+  </div>
+</aside>
+<div class="content">
+<section class="section" id="projects">
+  <div class="sec-head">
+    <h2><span lang="en">Projects</span><span lang="es">Proyectos</span></h2>
+    <a class="stars total" href="https://github.com/facundoallia?tab=repositories" target="_blank" rel="noopener" data-total><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .9l2.2 4.6 5 .7-3.6 3.5.9 5L8 12.3l-4.5 2.4.9-5L.8 6.2l5-.7z"/></svg><b>66</b><span lang="en">stars on GitHub</span><span lang="es">estrellas en GitHub</span></a>
+  </div>
+  <div class="panel">
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button type="button" data-filter="all" aria-pressed="true"><span lang="en">All</span><span lang="es">Todos</span></button>
+      <button type="button" data-filter="ai" aria-pressed="false"><span lang="en">AI</span><span lang="es">IA</span></button>
+      <button type="button" data-filter="data" aria-pressed="false"><span lang="en">Data engineering</span><span lang="es">Ingeniería de datos</span></button>
+      <button type="button" data-filter="apps" aria-pressed="false"><span lang="en">Applications</span><span lang="es">Aplicaciones</span></button>
+      <button type="button" data-filter="ml" aria-pressed="false">Machine learning</button>
+      <button type="button" data-filter="quant" aria-pressed="false">Quant</button>
     </div>
-
-    <!-- Free Financial Resources Section (Full Width) -->
-    <div class="container">
-        <section id="resources" class="card resources-section">
-            <h2 class="card-title" data-en="Free Financial Resources" data-es="Recursos Financieros Gratuitos">Free Financial Resources</h2>
-                <p class="section-intro" data-en="Access free tools and resources for financial analysis and portfolio management. These comprehensive tools support research, analysis, valuation, and portfolio management workflows for both retail and institutional investors, providing real-time data and advanced metrics to enhance decision-making." data-es="Accede a herramientas y recursos gratuitos para análisis financiero y gestión de carteras. Estas herramientas completas apoyan flujos de trabajo de investigación, análisis, valuación y gestión de portafolios tanto para inversionistas minoristas como institucionales, proporcionando datos en tiempo real y métricas avanzadas para mejorar la toma de decisiones.">Access free tools and resources for financial analysis and portfolio management. These comprehensive tools support research, analysis, valuation, and portfolio management workflows for both retail and institutional investors, providing real-time data and advanced metrics to enhance decision-making.</p>            <div class="resources-grid">
-                <div class="resource-card">
-                    <div class="resource-icon-large">📊</div>
-                    <h3 class="resource-title" data-en="Carry Trade Analysis" data-es="Análisis Carry Trade">Carry Trade Analysis</h3>
-                    <p class="resource-description" data-en="Carry trade analysis tool for Argentine bonds with real-time data and advanced metrics" data-es="Herramienta de análisis de carry trade para bonos argentinos con datos en tiempo real y métricas avanzadas">Carry trade analysis tool for Argentine bonds with real-time data and advanced metrics</p>
-                    <a href="https://logos-serviciosfinancieros.com.ar/recursos/analisis-carry-trade" target="_blank" class="btn btn-primary" data-en="Access Tool" data-es="Acceder a Herramienta">Access Tool</a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="resource-icon-large">₿</div>
-                    <h3 class="resource-title" data-en="Interactive Crypto Portfolio" data-es="Cartera de Criptomonedas Interactiva">Interactive Crypto Portfolio</h3>
-                    <p class="resource-description" data-en="Interactive dashboard for comprehensive crypto portfolio tracking and performance analysis" data-es="Dashboard interactivo para seguimiento integral de portfolios cripto y análisis de rendimiento">Interactive dashboard for comprehensive crypto portfolio tracking and performance analysis</p>
-                    <a href="https://logos-serviciosfinancieros.com.ar/recursos/cartera-de-criptomonedas-interactiva" target="_blank" class="btn btn-primary" data-en="Access Dashboard" data-es="Acceder a Dashboard">Access Dashboard</a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="resource-icon-large">🧮</div>
-                    <h3 class="resource-title" data-en="Investment Calculator" data-es="Calculadora de Inversiones">Investment Calculator</h3>
-                    <p class="resource-description" data-en="Advanced calculator for investment projections with compound interest and inflation adjustments" data-es="Calculadora avanzada para proyecciones de inversión con interés compuesto y ajuste por inflación">Advanced calculator for investment projections with compound interest and inflation adjustments</p>
-                    <a href="https://logos-serviciosfinancieros.com.ar/recursos/calculadora-de-inversiones" target="_blank" class="btn btn-primary" data-en="Access Calculator" data-es="Acceder a Calculadora">Access Calculator</a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="resource-icon-large">📈</div>
-                    <h3 class="resource-title" data-en="Recommended Investment Portfolios" data-es="Carteras de Inversión Recomendadas">Recommended Investment Portfolios</h3>
-                    <p class="resource-description" data-en="Model portfolios updated monthly with asset allocation strategies and risk profiles" data-es="Portfolios modelo actualizados mensualmente con estrategias de asignación de activos y perfiles de riesgo">Model portfolios updated monthly with asset allocation strategies and risk profiles</p>
-                    <a href="https://docs.google.com/spreadsheets/d/1YPNv_Nh0ngx4neE2wVE_RY_st4dCmrwO/edit" target="_blank" class="btn btn-primary" data-en="View Portfolios" data-es="Ver Carteras">View Portfolios</a>
-                </div>
-            </div>
-        </section>
+    <div class="list" id="grid">
+<article class="card" data-tags="ai data">
+  <div class="thumb tile" aria-hidden="true"><img src="assets/img/tech/claude.svg" alt="" width="30" height="30" loading="lazy"><img src="assets/img/tech/whatsapp.svg" alt="" width="30" height="30" loading="lazy"><img src="assets/img/tech/telegram.svg" alt="" width="30" height="30" loading="lazy"></div>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">Production LLM pipeline for financial research with human-in-the-loop approval</span><span lang="es">Pipeline LLM en producción para research financiero con aprobación humana</span></h3><div class="badges"><span class="card-name">Canal Logos</span><span class="badge prod"><span lang="en">In production</span><span lang="es">En producción</span></span><span class="badge "><span lang="en">Private code</span><span lang="es">Código privado</span></span></div></div>
+    <p lang="en">Runs on a daily schedule: ingests broker research from WhatsApp, turns it into structured notes with Claude, adds market charts, requests approval on Telegram and publishes to WhatsApp, Telegram and Instagram.</p>
+    <p lang="es">Corre con agenda diaria: toma el research de brokers desde WhatsApp, lo convierte con Claude en notas estructuradas, suma gráficos de mercado, pide aprobación por Telegram y publica en WhatsApp, Telegram e Instagram.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/claude.svg" alt="" width="16" height="16" loading="lazy">Claude</li><li><img src="assets/img/tech/go.svg" alt="" width="16" height="16" loading="lazy">Go</li><li><img src="assets/img/tech/telegram.svg" alt="" width="16" height="16" loading="lazy">Telegram API</li><li><img src="assets/img/tech/whatsapp.svg" alt="" width="16" height="16" loading="lazy">WhatsApp</li></ul>
+  </div>
+</article>
+<article class="card" data-tags="ai data">
+  <div class="thumb tile" aria-hidden="true"><img src="assets/img/tech/claude.svg" alt="" width="30" height="30" loading="lazy"><img src="assets/img/tech/sqlite.svg" alt="" width="30" height="30" loading="lazy"><img src="assets/img/tech/react.svg" alt="" width="30" height="30" loading="lazy"></div>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">LLM signal extraction and alerting engine for investment research</span><span lang="es">Motor de extracción de señales con LLM y alertas para research de inversiones</span></h3><div class="badges"><span class="card-name">Nous</span><span class="badge dev"><span lang="en">In development</span><span lang="es">En desarrollo</span></span><span class="badge "><span lang="en">Private code</span><span lang="es">Código privado</span></span></div></div>
+    <p lang="en">Ingests video transcripts, PDFs and chat messages, extracts Pydantic-validated signals with Claude and crosses them with broker positions in a single database. A rules engine flags divergences; the final call stays with a person.</p>
+    <p lang="es">Ingiere transcripciones de video, PDF y mensajes, extrae con Claude señales validadas con Pydantic y las cruza con posiciones de brokers en una sola base. Un motor de reglas marca divergencias; la decisión final queda en una persona.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/claude.svg" alt="" width="16" height="16" loading="lazy">Claude</li><li>Pydantic</li><li><img src="assets/img/tech/sqlite.svg" alt="" width="16" height="16" loading="lazy">SQLite</li><li><img src="assets/img/tech/react.svg" alt="" width="16" height="16" loading="lazy">React</li></ul>
+  </div>
+</article>
+<article class="card" data-tags="quant data">
+  <div class="thumb tile" aria-hidden="true"><img src="assets/img/tech/python.svg" alt="" width="30" height="30" loading="lazy"></div>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">Probabilistic pricing and backtesting for short-horizon prediction markets</span><span lang="es">Valoración probabilística y backtesting para mercados de predicción de corto plazo</span></h3><div class="badges"><span class="badge "><span lang="en">Private code</span><span lang="es">Código privado</span></span></div></div>
+    <p lang="en">Analytical GBM and barrier pricing plus fat-tailed Monte Carlo, compared against market-implied probabilities. Includes a real-time data collector with a fallback chain of price oracles, and grid search with train, validation and test splits.</p>
+    <p lang="es">Valoración analítica con GBM y barreras, y Monte Carlo de colas pesadas, comparados con las probabilidades implícitas del mercado. Incluye un recolector en tiempo real con una cadena de oráculos de respaldo y grid search con separación en train, validación y test.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/numpy.svg" alt="" width="16" height="16" loading="lazy">NumPy</li><li><img src="assets/img/tech/pandas.svg" alt="" width="16" height="16" loading="lazy">pandas</li></ul>
+  </div>
+</article>
+<article class="card" data-tags="quant">
+  <a class="thumb" href="https://github.com/facundoallia/Trading-Screener-with-Python-and-Tradingview" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/trading-screener.webp" width="320" height="200" loading="lazy" alt=""></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">Multi-indicator trading signal screener with Python and TradingView</span><span lang="es">Screener de señales de trading multiindicador con Python y TradingView</span></h3><div class="badges"><span class="badge "><span lang="en">Open source</span><span lang="es">Código abierto</span></span><a class="stars" href="https://github.com/facundoallia/Trading-Screener-with-Python-and-Tradingview" target="_blank" rel="noopener" data-repo="Trading-Screener-with-Python-and-Tradingview" aria-label="27 GitHub stars"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .9l2.2 4.6 5 .7-3.6 3.5.9 5L8 12.3l-4.5 2.4.9-5L.8 6.2l5-.7z"/></svg><b>27</b></a><span class="forks">13 forks</span></div></div>
+    <p lang="en">Aggregates buy and sell readings from TradingView indicators across a universe of instruments, then filters by indicator detail to surface trade candidates. My most starred open-source project.</p>
+    <p lang="es">Agrega lecturas de compra y venta de indicadores de TradingView sobre un universo de instrumentos y filtra por el detalle de cada indicador para encontrar candidatos. Mi proyecto open source con más estrellas.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/tradingview.svg" alt="" width="16" height="16" loading="lazy">TradingView</li></ul>
+    <div class="acts"><a class="act" href="https://github.com/facundoallia/Trading-Screener-with-Python-and-Tradingview" target="_blank" rel="noopener">GitHub</a><a class="act" href="https://medium.com/@facujallia/building-an-effective-trading-screener-with-python-and-tradingview-9329db9afaa9" target="_blank" rel="noopener">Medium</a></div>
+  </div>
+</article>
+<article class="card" data-tags="ml quant">
+  <a class="thumb" href="https://github.com/facundoallia/calendar-spread-time-series-forecasting" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/calendar-spread.webp" width="320" height="200" loading="lazy" alt=""></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">Time series forecasting of futures calendar spreads with Prophet</span><span lang="es">Forecasting de calendar spreads de futuros con Prophet</span></h3><div class="badges"><span class="badge "><span lang="en">Open source</span><span lang="es">Código abierto</span></span><a class="stars" href="https://github.com/facundoallia/calendar-spread-time-series-forecasting" target="_blank" rel="noopener" data-repo="calendar-spread-time-series-forecasting" aria-label="5 GitHub stars"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .9l2.2 4.6 5 .7-3.6 3.5.9 5L8 12.3l-4.5 2.4.9-5L.8 6.2l5-.7z"/></svg><b>5</b></a></div></div>
+    <p lang="en">Reusable analyzer for corn, soybean and wheat spreads on Matba Rofex: builds contract pairs from price history since 2010 and forecasts the differential.</p>
+    <p lang="es">Analizador reutilizable de spreads de maíz, soja y trigo en Matba Rofex: arma pares de contratos con precios desde 2010 y pronostica el diferencial.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li>Prophet</li><li><img src="assets/img/tech/pandas.svg" alt="" width="16" height="16" loading="lazy">pandas</li></ul>
+    <div class="acts"><a class="act" href="https://github.com/facundoallia/calendar-spread-time-series-forecasting" target="_blank" rel="noopener">GitHub</a><a class="act" href="https://medium.com/@facujallia/unleashing-the-power-of-time-series-forecasting-in-calendar-spread-strategies-an-application-in-2cc568933f3a" target="_blank" rel="noopener">Medium</a></div>
+  </div>
+</article>
+<article class="card" data-tags="apps quant">
+  <a class="thumb" href="https://logos-breakeven.vercel.app" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/breakeven.webp" width="320" height="200" loading="lazy" alt="Implied inflation by term and monthly breakeven path"></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">Market-implied inflation and FX engine from sovereign yield curves</span><span lang="es">Motor de inflación y devaluación implícitas en curvas soberanas</span></h3><div class="badges"><span class="card-name">Logos Breakeven</span><span class="badge prod"><span lang="en">In production</span><span lang="es">En producción</span></span><span class="badge "><span lang="en">Open source</span><span lang="es">Código abierto</span></span></div></div>
+    <p lang="en">Fisher decomposition across fixed, inflation-linked and dollar-linked Treasury curves, with forward rates and a monthly path built from pairs of bonds maturing together. Tested analytics core, live market data every minute during trading hours.</p>
+    <p lang="es">Descomposición de Fisher entre curvas del Tesoro a tasa fija, CER y dollar-linked, con tasas forward y un sendero mensual a partir de pares de bonos con igual vencimiento. Núcleo analítico con tests y datos de mercado cada minuto durante la rueda.</p>
+    <ul class="chips"><li><img src="assets/img/tech/nextjs.svg" alt="" width="16" height="16" loading="lazy">Next.js</li><li><img src="assets/img/tech/typescript.svg" alt="" width="16" height="16" loading="lazy">TypeScript</li><li><img src="assets/img/tech/vercel.svg" alt="" width="16" height="16" loading="lazy">Vercel</li></ul>
+    <div class="acts"><a class="act solid" href="https://logos-breakeven.vercel.app" target="_blank" rel="noopener"><span lang="en">Open app</span><span lang="es">Abrir app</span></a><a class="act" href="https://github.com/facundoallia/logos-breakeven" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+</article>
+<article class="card" data-tags="ml quant" data-extra hidden>
+  <a class="thumb" href="https://github.com/facundoallia/Stock-classification-using-k-means-clustering" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/kmeans.webp" width="320" height="200" loading="lazy" alt=""></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">Unsupervised clustering of S&amp;P 500 stocks with k-means++</span><span lang="es">Clustering no supervisado de acciones del S&amp;P 500 con k-means++</span></h3><div class="badges"><span class="badge "><span lang="en">Paper and code</span><span lang="es">Paper y código</span></span><a class="stars" href="https://github.com/facundoallia/Stock-classification-using-k-means-clustering" target="_blank" rel="noopener" data-repo="Stock-classification-using-k-means-clustering" aria-label="6 GitHub stars"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .9l2.2 4.6 5 .7-3.6 3.5.9 5L8 12.3l-4.5 2.4.9-5L.8 6.2l5-.7z"/></svg><b>6</b></a></div></div>
+    <p lang="en">Groups the index by risk and return, then by valuation and dividends, and finally in three dimensions to support portfolio diversification. Published as a UCEMA paper.</p>
+    <p lang="es">Agrupa el índice por riesgo y retorno, luego por valuación y dividendos, y finalmente en tres dimensiones para ayudar a diversificar carteras. Publicado como paper en UCEMA.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/scikitlearn.svg" alt="" width="16" height="16" loading="lazy">scikit-learn</li></ul>
+    <div class="acts"><a class="act" href="https://github.com/facundoallia/Stock-classification-using-k-means-clustering" target="_blank" rel="noopener">GitHub</a><a class="act" href="https://medium.com/@facujallia/stock-classification-using-k-means-clustering-8441f75363de" target="_blank" rel="noopener">Medium</a></div>
+  </div>
+</article>
+<article class="card" data-tags="ml" data-extra hidden>
+  <a class="thumb" href="https://github.com/facundoallia/Exploring-the-Relationship-between-Elon-Musk-s-Tweets-and-Dogecoin-Volatility-with-NLP-and-Econometr" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/dogecoin.webp" width="320" height="200" loading="lazy" alt=""></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">NLP sentiment and OLS analysis of social media impact on crypto volatility</span><span lang="es">Análisis de sentimiento con NLP y OLS del impacto de redes sociales en la volatilidad cripto</span></h3><div class="badges"><span class="badge "><span lang="en">Open source</span><span lang="es">Código abierto</span></span><a class="stars" href="https://github.com/facundoallia/Exploring-the-Relationship-between-Elon-Musk-s-Tweets-and-Dogecoin-Volatility-with-NLP-and-Econometr" target="_blank" rel="noopener" data-repo="Exploring-the-Relationship-between-Elon-Musk-s-Tweets-and-Dogecoin-Volatility-with-NLP-and-Econometr" aria-label="3 GitHub stars"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .9l2.2 4.6 5 .7-3.6 3.5.9 5L8 12.3l-4.5 2.4.9-5L.8 6.2l5-.7z"/></svg><b>3</b></a></div></div>
+    <p lang="en">Crosses hourly DOGE/USDT data with Elon Musk's tweets, using sentiment polarity and OLS with ANOVA to test the effect on returns and volatility.</p>
+    <p lang="es">Cruza datos horarios de DOGE/USDT con los tweets de Elon Musk y usa polaridad de sentimiento y OLS con ANOVA para medir el efecto en retornos y volatilidad.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/pandas.svg" alt="" width="16" height="16" loading="lazy">pandas</li><li>statsmodels</li></ul>
+    <div class="acts"><a class="act" href="https://github.com/facundoallia/Exploring-the-Relationship-between-Elon-Musk-s-Tweets-and-Dogecoin-Volatility-with-NLP-and-Econometr" target="_blank" rel="noopener">GitHub</a><a class="act" href="https://medium.com/@facujallia/tweet-trade-profit-exploring-the-relationship-between-elon-musks-tweets-and-dogecoin-volatility-7da28ee9aead" target="_blank" rel="noopener">Medium</a></div>
+  </div>
+</article>
+<article class="card" data-tags="apps quant" data-extra hidden>
+  <a class="thumb" href="https://bonos-logos.vercel.app" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/bonos.webp" width="320" height="200" loading="lazy" alt="Table of hard-dollar bonds next to a fitted yield curve"></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">Fixed income analytics platform with fitted yield curves</span><span lang="es">Plataforma de análisis de renta fija con curvas de rendimiento ajustadas</span></h3><div class="badges"><span class="badge prod"><span lang="en">In production</span><span lang="es">En producción</span></span><span class="badge "><span lang="en">Open source</span><span lang="es">Código abierto</span></span></div></div>
+    <p lang="en">Live yields, duration and price history for seven Argentine bond families. A fitted curve flags which bonds trade cheap or rich against the rest. Market data refreshes every minute during trading hours.</p>
+    <p lang="es">TIR, duration e histórico en vivo de siete familias de bonos argentinos. Una curva ajustada marca qué bonos cotizan baratos o caros frente al resto. Los datos se refrescan cada minuto durante la rueda.</p>
+    <ul class="chips"><li><img src="assets/img/tech/nextjs.svg" alt="" width="16" height="16" loading="lazy">Next.js</li><li><img src="assets/img/tech/typescript.svg" alt="" width="16" height="16" loading="lazy">TypeScript</li><li><img src="assets/img/tech/vercel.svg" alt="" width="16" height="16" loading="lazy">Vercel</li></ul>
+    <div class="acts"><a class="act solid" href="https://bonos-logos.vercel.app" target="_blank" rel="noopener"><span lang="en">Open app</span><span lang="es">Abrir app</span></a><a class="act" href="https://github.com/facundoallia/logos-bonos" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+</article>
+<article class="card" data-tags="apps quant" data-extra hidden>
+  <a class="thumb" href="https://carry-trade-analyzer-omega.vercel.app" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/carry.webp" width="320" height="200" loading="lazy" alt="Heat map of carry returns by bond and exit exchange rate"></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">FX carry trade analytics with projected currency band and breakeven rates</span><span lang="es">Análisis de carry trade con banda cambiaria proyectada y tipos de cambio de equilibrio</span></h3><div class="badges"><span class="badge prod"><span lang="en">In production</span><span lang="es">En producción</span></span><span class="badge "><span lang="en">Open source</span><span lang="es">Código abierto</span></span></div></div>
+    <p lang="en">Dollar return of the carry trade by bond and exit exchange rate. The currency band ceiling is projected from inflation data and the central bank's survey of expectations.</p>
+    <p lang="es">Retorno en dólares del carry trade por bono y tipo de cambio de salida. El techo de la banda se proyecta con datos de inflación y el relevamiento de expectativas del BCRA.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/react.svg" alt="" width="16" height="16" loading="lazy">React</li><li><img src="assets/img/tech/vercel.svg" alt="" width="16" height="16" loading="lazy">Vercel</li></ul>
+    <div class="acts"><a class="act solid" href="https://carry-trade-analyzer-omega.vercel.app" target="_blank" rel="noopener"><span lang="en">Open app</span><span lang="es">Abrir app</span></a><a class="act" href="https://github.com/facundoallia/carry-trade-analyzer" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+</article>
+<article class="card" data-tags="data" data-extra hidden>
+  <a class="thumb" href="https://bcra-rem-api.facujallia.workers.dev" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/rem-bcra-api.svg" width="320" height="200" loading="lazy" alt=""></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">ETL pipeline and public REST API for central bank macro forecasts</span><span lang="es">Pipeline ETL y API REST pública para pronósticos macro del banco central</span></h3><div class="badges"><span class="card-name">REM BCRA API</span><span class="badge "><span lang="en">Open source</span><span lang="es">Código abierto</span></span><a class="stars" href="https://github.com/facundoallia/rem-bcra-api" target="_blank" rel="noopener" data-repo="rem-bcra-api" aria-label="2 GitHub stars"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .9l2.2 4.6 5 .7-3.6 3.5.9 5L8 12.3l-4.5 2.4.9-5L.8 6.2l5-.7z"/></svg><b>2</b></a></div></div>
+    <p lang="en">Public REST API for the Argentine central bank's survey of about 45 forecasters. A pipeline turns the official Excel into JSON, served from Cloudflare's edge with no key required.</p>
+    <p lang="es">API REST pública para el relevamiento del BCRA a unos 45 pronosticadores. Un pipeline convierte el Excel oficial en JSON, servido desde el edge de Cloudflare y sin clave.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/githubactions.svg" alt="" width="16" height="16" loading="lazy">GitHub Actions</li><li><img src="assets/img/tech/cloudflare.svg" alt="" width="16" height="16" loading="lazy">Cloudflare Workers</li></ul>
+    <div class="acts"><a class="act solid" href="https://bcra-rem-api.facujallia.workers.dev" target="_blank" rel="noopener">API</a><a class="act" href="https://github.com/facundoallia/rem-bcra-api" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+</article>
+<article class="card" data-tags="apps quant" data-extra hidden>
+  <a class="thumb" href="https://www.linkedin.com/feed/update/urn:li:activity:7234669321493377024/" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/screener.webp" width="320" height="200" loading="lazy" alt="Desktop screener processing tickers next to a chart with a signal"></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">Multi-market signal engine with automated Telegram alerts</span><span lang="es">Motor de señales multimercado con alertas automáticas por Telegram</span></h3><div class="badges"><span class="badge "><span lang="en">Client project</span><span lang="es">Proyecto para cliente</span></span></div></div>
+    <p lang="en">Desktop application built for a client. It scans European and US indices on moving averages and ADX, then sends each signal with its chart to Telegram.</p>
+    <p lang="es">Aplicación de escritorio hecha para un cliente. Recorre índices de Europa y Estados Unidos con medias móviles y ADX, y envía cada señal con su gráfico a Telegram.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/telegram.svg" alt="" width="16" height="16" loading="lazy">Telegram API</li></ul>
+    <div class="acts"><a class="act solid" href="https://www.linkedin.com/feed/update/urn:li:activity:7234669321493377024/" target="_blank" rel="noopener">Demo</a></div>
+  </div>
+</article>
+<article class="card" data-tags="apps quant" data-extra hidden>
+  <a class="thumb" href="https://logos-cedears.vercel.app" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/cedears.webp" width="320" height="200" loading="lazy" alt="Table of CEDEARs with ratio, prices and implied exchange rate"></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">Implied FX and arbitrage monitor for depositary receipts</span><span lang="es">Monitor de tipo de cambio implícito y arbitraje de CEDEARs</span></h3><div class="badges"><span class="badge prod"><span lang="en">In production</span><span lang="es">En producción</span></span><span class="badge "><span lang="en">Private code</span><span lang="es">Código privado</span></span></div></div>
+    <p lang="en">Every traded Argentine depositary receipt, with the exchange rate implied by its price and its gap to the reference rate. Searchable and exportable to CSV.</p>
+    <p lang="es">Todos los CEDEARs que cotizan, con el tipo de cambio implícito en su precio y la diferencia con el de referencia. Se puede buscar y exportar a CSV.</p>
+    <ul class="chips"><li><img src="assets/img/tech/nextjs.svg" alt="" width="16" height="16" loading="lazy">Next.js</li><li><img src="assets/img/tech/typescript.svg" alt="" width="16" height="16" loading="lazy">TypeScript</li><li><img src="assets/img/tech/vercel.svg" alt="" width="16" height="16" loading="lazy">Vercel</li></ul>
+    <div class="acts"><a class="act solid" href="https://logos-cedears.vercel.app" target="_blank" rel="noopener"><span lang="en">Open app</span><span lang="es">Abrir app</span></a></div>
+  </div>
+</article>
+<article class="card" data-tags="quant" data-extra hidden>
+  <a class="thumb" href="https://github.com/facundoallia/Maximizing-Profitability-of-Moving-Average-Crossover-Trading-Strategy" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/ma-crossover.webp" width="320" height="200" loading="lazy" alt=""></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">Parameter grid search for moving average crossover strategies</span><span lang="es">Grid search de parámetros para estrategias de cruce de medias</span></h3><div class="badges"><span class="badge "><span lang="en">Open source</span><span lang="es">Código abierto</span></span><a class="stars" href="https://github.com/facundoallia/Maximizing-Profitability-of-Moving-Average-Crossover-Trading-Strategy" target="_blank" rel="noopener" data-repo="Maximizing-Profitability-of-Moving-Average-Crossover-Trading-Strategy" aria-label="5 GitHub stars"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .9l2.2 4.6 5 .7-3.6 3.5.9 5L8 12.3l-4.5 2.4.9-5L.8 6.2l5-.7z"/></svg><b>5</b></a></div></div>
+    <p lang="en">Backtests combinations of short and long moving averages and compares them in a return matrix, measuring accumulated return and drawdown.</p>
+    <p lang="es">Prueba combinaciones de medias cortas y largas sobre datos históricos y las compara en una matriz de retornos, midiendo retorno acumulado y drawdown.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/pandas.svg" alt="" width="16" height="16" loading="lazy">pandas</li></ul>
+    <div class="acts"><a class="act" href="https://github.com/facundoallia/Maximizing-Profitability-of-Moving-Average-Crossover-Trading-Strategy" target="_blank" rel="noopener">GitHub</a><a class="act" href="https://medium.com/@facujallia/maximizing-profitability-of-moving-average-crossover-trading-strategy-what-moving-averages-to-use-e5cd70085690" target="_blank" rel="noopener">Medium</a></div>
+  </div>
+</article>
+<article class="card" data-tags="data" data-extra hidden>
+  <a class="thumb" href="https://github.com/facundoallia/api_iol" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/iol.webp" width="320" height="200" loading="lazy" alt=""></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">Python helpers for the InvertirOnline broker API</span><span lang="es">Funciones en Python para la API del broker InvertirOnline</span></h3><div class="badges"><span class="badge "><span lang="en">Open source</span><span lang="es">Código abierto</span></span><a class="stars" href="https://github.com/facundoallia/api_iol" target="_blank" rel="noopener" data-repo="api_iol" aria-label="3 GitHub stars"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .9l2.2 4.6 5 .7-3.6 3.5.9 5L8 12.3l-4.5 2.4.9-5L.8 6.2l5-.7z"/></svg><b>3</b></a></div></div>
+    <p lang="en">Useful Python functions for working with the InvertirOnline broker API.</p>
+    <p lang="es">Funciones útiles en Python para trabajar con la API del broker InvertirOnline.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li></ul>
+    <div class="acts"><a class="act" href="https://github.com/facundoallia/api_iol" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+</article>
+<article class="card" data-tags="quant" data-extra hidden>
+  <a class="thumb" href="https://github.com/facundoallia/major-stock-market-indexes-historical-monthly-returns" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/work/sell-in-may.webp" width="320" height="200" loading="lazy" alt=""></a>
+  <div class="card-body">
+    <div class="card-head"><h3><span lang="en">Seasonality analysis of major US equity indexes</span><span lang="es">Análisis de estacionalidad de los principales índices de Estados Unidos</span></h3><div class="badges"><span class="badge "><span lang="en">Open source</span><span lang="es">Código abierto</span></span><a class="stars" href="https://github.com/facundoallia/major-stock-market-indexes-historical-monthly-returns" target="_blank" rel="noopener" data-repo="major-stock-market-indexes-historical-monthly-returns" aria-label="2 GitHub stars"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .9l2.2 4.6 5 .7-3.6 3.5.9 5L8 12.3l-4.5 2.4.9-5L.8 6.2l5-.7z"/></svg><b>2</b></a></div></div>
+    <p lang="en">Average monthly returns of the S&amp;P 500, Nasdaq, Dow Jones and Russell 2000 over decades, testing the Sell in May effect.</p>
+    <p lang="es">Retornos mensuales promedio del S&amp;P 500, Nasdaq, Dow Jones y Russell 2000 a lo largo de décadas, para poner a prueba el efecto Sell in May.</p>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/pandas.svg" alt="" width="16" height="16" loading="lazy">pandas</li></ul>
+    <div class="acts"><a class="act" href="https://github.com/facundoallia/major-stock-market-indexes-historical-monthly-returns" target="_blank" rel="noopener">GitHub</a><a class="act" href="https://medium.com/@facujallia/sell-in-may-and-go-away-a-study-of-major-stock-market-indexs-historical-monthly-returns-96cf8ed3df1" target="_blank" rel="noopener">Medium</a></div>
+  </div>
+</article>
     </div>
+    <button class="more" id="more" type="button"><span lang="en">Show more</span><span lang="es">Ver más</span></button>
+    <p class="also"><span lang="en">Also public on Logos:</span><span lang="es">También públicas en Logos:</span>
+      <a href="https://logos-mep.vercel.app" target="_blank" rel="noopener"><span lang="en">Dólar MEP quotes</span><span lang="es">Cotización MEP</span></a>
+      <a href="https://logos-chpd-app.vercel.app" target="_blank" rel="noopener"><span lang="en">Cheque discount calculator</span><span lang="es">Calculadora de cheques</span></a>
+      <a href="https://logos-serviciosfinancieros.com.ar/recursos/carteras-modelo" target="_blank" rel="noopener"><span lang="en">Model portfolios</span><span lang="es">Carteras modelo</span></a>
+      <a href="https://logos-serviciosfinancieros.com.ar/recursos/calculadora-de-inversiones" target="_blank" rel="noopener"><span lang="en">Investment calculator</span><span lang="es">Calculadora de inversiones</span></a>
+    </p>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Facundo Joel Allia Fernandez. All rights reserved.</p>
-        </div>
-    </footer>
+<section class="section" id="publications">
+  <h2><span lang="en">Publications</span><span lang="es">Publicaciones</span></h2>
+  <div class="panel pubs">
+    <a class="pub" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4280119" target="_blank" rel="noopener"><img src="assets/img/work/paper-butterfly.webp" alt="" width="160" height="100" loading="lazy"><span><strong>Construction of risk-neutral probability density functions through butterfly spreads</strong><span class="org">Bolsa de Comercio de Rosario, 2022. SSRN</span></span></a>
+    <a class="pub" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4403662" target="_blank" rel="noopener"><img src="assets/img/work/paper-kmeans.webp" alt="" width="160" height="100" loading="lazy"><span><strong>Stock classification using k-means clustering</strong><span class="org">UCEMA, 2022. SSRN</span></span></a>
+  </div>
+</section>
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/themes.js"></script>
-    
-    <!-- Calendly Initialization -->
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-            // Handle Calendly button clicks
-            document.querySelectorAll('.calendly-trigger').forEach(function(button) {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    var url = this.getAttribute('data-calendly-url') || 'https://calendly.com/facujallia/reunion';
-                    if (typeof Calendly !== 'undefined') {
-                        Calendly.initPopupWidget({url: url});
-                    }
-                });
-            });
-        });
-    </script>
+<section class="section" id="experience">
+  <h2><span lang="en">Experience</span><span lang="es">Experiencia</span></h2>
+<details class="job" open>
+  <summary><span class="mini"><img src="assets/img/logos/santander.svg" alt="" loading="lazy"></span><span class="job-title"><strong><span lang="en">Senior Data Scientist &amp; Automation Engineer</span><span lang="es">Científico de datos senior e ingeniero de automatización</span></strong><span class="org">Banco Santander CIB</span></span><span class="yr"><span lang="en">2025 to now</span><span lang="es">2025 a hoy</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></summary>
+  <div class="job-body">
+    <ul lang="en"><li>Design scalable data solutions with Python, SQL and cloud technologies that make financial processes cheaper to run.</li><li>Develop automated ETL pipelines from enterprise systems, data lakes and financial platforms.</li><li>Build end-to-end applications and interactive dashboards for decision-makers.</li><li>AI Ambassador: develop use cases and help business units adopt AI solutions.</li></ul>
+    <ul lang="es"><li>Diseño soluciones de datos escalables con Python, SQL y tecnologías cloud que abaratan procesos financieros.</li><li>Desarrollo pipelines ETL automatizados desde sistemas corporativos, data lakes y plataformas financieras.</li><li>Construyo aplicaciones completas y dashboards interactivos para quienes toman decisiones.</li><li>AI Ambassador: desarrollo casos de uso y acompaño a las áreas de negocio en la adopción de IA.</li></ul>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/azuresqldatabase.svg" alt="" width="16" height="16" loading="lazy">SQL</li><li><img src="assets/img/tech/databricks.svg" alt="" width="16" height="16" loading="lazy">Databricks</li><li><img src="assets/img/tech/azure.svg" alt="" width="16" height="16" loading="lazy">Azure</li><li><img src="assets/img/tech/powerbi.svg" alt="" width="16" height="16" loading="lazy">Power BI</li><li><img src="assets/img/tech/mcp.svg" alt="" width="16" height="16" loading="lazy">MCP</li><li>RAG</li><li>LLMs</li><li>Murex</li></ul>
+  </div>
+</details>
+<details class="job">
+  <summary><span class="mini"><img src="assets/img/logos/pwc.svg" alt="" loading="lazy"></span><span class="job-title"><strong><span lang="en">Quantitative Analyst</span><span lang="es">Analista cuantitativo</span></strong><span class="org">PwC</span></span><span class="yr"><span lang="en">2024 to 2025</span><span lang="es">2024 a 2025</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></summary>
+  <div class="job-body">
+    <ul lang="en"><li>Developed a credit derivatives valuation engine in Python with CVA/DVA frameworks.</li><li>Priced complex derivatives with stochastic models and Monte Carlo simulation.</li><li>Built XVA models for regulatory compliance and worked with audit teams on validation.</li><li>Ran scenario analysis and stress tests in Python, R and proprietary risk systems.</li></ul>
+    <ul lang="es"><li>Desarrollé un motor de valoración de derivados de crédito en Python con marcos CVA/DVA.</li><li>Valoré derivados complejos con modelos estocásticos y simulación Monte Carlo.</li><li>Construí modelos XVA para cumplimiento regulatorio y trabajé con auditoría en su validación.</li><li>Realicé análisis de escenarios y stress tests en Python, R y sistemas propietarios de riesgo.</li></ul>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/r.svg" alt="" width="16" height="16" loading="lazy">R</li><li><img src="assets/img/tech/databricks.svg" alt="" width="16" height="16" loading="lazy">Databricks</li><li><img src="assets/img/tech/apachespark.svg" alt="" width="16" height="16" loading="lazy">PySpark</li><li><img src="assets/img/tech/azure.svg" alt="" width="16" height="16" loading="lazy">Azure</li><li><img src="assets/img/tech/powerbi.svg" alt="" width="16" height="16" loading="lazy">Power BI</li><li>Murex</li><li>Bloomberg</li></ul>
+  </div>
+</details>
+<details class="job">
+  <summary><span class="mini"><img src="assets/img/logos/accenture.svg" alt="" loading="lazy"></span><span class="job-title"><strong><span lang="en">Financial Data Transition Specialist</span><span lang="es">Especialista en transición de datos financieros</span></strong><span class="org">Accenture</span></span><span class="yr"><span lang="en">2022 to 2023</span><span lang="es">2022 a 2023</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></summary>
+  <div class="job-body">
+    <ul lang="en"><li>Worked with SAP HANA and cloud platforms on large-scale data integration.</li><li>Implemented forecasting tools and management software for better financial visibility.</li><li>Developed KPIs and financial metrics for enterprise reporting.</li></ul>
+    <ul lang="es"><li>Trabajé con SAP HANA y plataformas cloud en integración de datos a gran escala.</li><li>Implementé herramientas de forecasting y software de gestión para mejorar la visibilidad financiera.</li><li>Desarrollé KPIs y métricas financieras para reportes corporativos.</li></ul>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/azuresqldatabase.svg" alt="" width="16" height="16" loading="lazy">SQL</li><li><img src="assets/img/tech/databricks.svg" alt="" width="16" height="16" loading="lazy">Databricks</li><li><img src="assets/img/tech/apachespark.svg" alt="" width="16" height="16" loading="lazy">PySpark</li><li><img src="assets/img/tech/amazonwebservices.svg" alt="" width="16" height="16" loading="lazy">AWS</li><li><img src="assets/img/tech/azure.svg" alt="" width="16" height="16" loading="lazy">Azure</li><li>SAP HANA</li></ul>
+  </div>
+</details>
+<details class="job">
+  <summary><span class="mini"><img src="assets/img/logos/nixtla-mark.png" alt="" loading="lazy"></span><span class="job-title"><strong><span lang="en">Data Scientist</span><span lang="es">Científico de datos</span></strong><span class="org">Nixtla</span></span><span class="yr">2022<svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></summary>
+  <div class="job-body">
+    <ul lang="en"><li>Developed automated forecasting pipelines on Databricks with PySpark.</li><li>Forecasted time series with ARIMA, ETS and CES models in Python and R.</li><li>Wrote technical documentation and evaluated model performance.</li></ul>
+    <ul lang="es"><li>Desarrollé pipelines automatizados de forecasting en Databricks con PySpark.</li><li>Hice forecasting de series temporales con modelos ARIMA, ETS y CES en Python y R.</li><li>Escribí documentación técnica y evalué el desempeño de los modelos.</li></ul>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/r.svg" alt="" width="16" height="16" loading="lazy">R</li><li><img src="assets/img/tech/azuresqldatabase.svg" alt="" width="16" height="16" loading="lazy">SQL</li><li><img src="assets/img/tech/apachespark.svg" alt="" width="16" height="16" loading="lazy">PySpark</li><li><img src="assets/img/tech/databricks.svg" alt="" width="16" height="16" loading="lazy">Databricks</li><li><img src="assets/img/tech/amazonwebservices.svg" alt="" width="16" height="16" loading="lazy">AWS</li><li><img src="assets/img/tech/docker.svg" alt="" width="16" height="16" loading="lazy">Docker</li><li><img src="assets/img/tech/git.svg" alt="" width="16" height="16" loading="lazy">Git</li></ul>
+  </div>
+</details>
+<details class="job">
+  <summary><span class="mini"><img src="assets/img/logos/matba-rofex.svg" alt="" loading="lazy"></span><span class="job-title"><strong><span lang="en">Derivatives Trader, Market Making</span><span lang="es">Trader de derivados, market making</span></strong><span class="org">Matba Rofex</span></span><span class="yr"><span lang="en">2021 to 2023</span><span lang="es">2021 a 2023</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></summary>
+  <div class="job-body">
+    <ul lang="en"><li>Traded futures and options with a market-funded account, meeting volume standards, and outperformed the benchmark for two consecutive years.</li><li>Developed Python trading analytics and backtesting frameworks.</li></ul>
+    <ul lang="es"><li>Operé futuros y opciones con una cuenta fondeada por el mercado, cumpliendo estándares de volumen, y superé el benchmark durante dos años consecutivos.</li><li>Desarrollé analítica de trading y frameworks de backtesting en Python.</li></ul>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/azuresqldatabase.svg" alt="" width="16" height="16" loading="lazy">SQL</li><li><img src="assets/img/tech/tradingview.svg" alt="" width="16" height="16" loading="lazy">TradingView</li></ul>
+  </div>
+</details>
+<details class="job">
+  <summary><span class="mini"><img src="assets/img/logos/libertad.svg" alt="" loading="lazy"></span><span class="job-title"><strong><span lang="en">Commercial Data Analyst</span><span lang="es">Analista de datos comerciales</span></strong><span class="org">Libertad S.A.</span></span><span class="yr"><span lang="en">2021 to 2022</span><span lang="es">2021 a 2022</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></summary>
+  <div class="job-body">
+    <ul lang="en"><li>Developed budgets and demand forecasts with macroeconomic variables, delivered through dashboards.</li><li>Implemented real-time sales data ingestion and analysis at scale.</li></ul>
+    <ul lang="es"><li>Desarrollé presupuestos y pronósticos de demanda con variables macroeconómicas, en dashboards.</li><li>Implementé la ingesta y el análisis de datos de ventas en tiempo real y a escala.</li></ul>
+    <ul class="chips"><li><img src="assets/img/tech/python.svg" alt="" width="16" height="16" loading="lazy">Python</li><li><img src="assets/img/tech/azuresqldatabase.svg" alt="" width="16" height="16" loading="lazy">SQL</li><li><img src="assets/img/tech/powerbi.svg" alt="" width="16" height="16" loading="lazy">Power BI</li><li>SAP</li></ul>
+  </div>
+</details>
+<details class="job">
+  <summary><span class="mini"><img src="assets/img/logos/logos-mark.png" alt="" loading="lazy"></span><span class="job-title"><strong><span lang="en">Financial Advisor &amp; Founder</span><span lang="es">Asesor financiero y fundador</span></strong><span class="org">Logos Servicios Financieros</span></span><span class="yr"><span lang="en">2020 to now</span><span lang="es">2020 a hoy</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></summary>
+  <div class="job-body">
+    <ul lang="en"><li>Provide financial advisory and portfolio management with investment strategies built for each client.</li><li>Built and manage a proprietary client portfolio.</li></ul>
+    <ul lang="es"><li>Brindo asesoramiento financiero y gestión de carteras con estrategias de inversión hechas para cada cliente.</li><li>Construí y gestiono una cartera propia de clientes.</li></ul>
+  </div>
+</details>
+<details class="job">
+  <summary><span class="mini"><img src="assets/img/logos/peugeot.svg" alt="" loading="lazy"></span><span class="job-title"><strong><span lang="en">Data Analyst</span><span lang="es">Analista de datos</span></strong><span class="org">Peugeot Avant Autocity</span></span><span class="yr">2019<svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></summary>
+  <div class="job-body">
+    <ul lang="en"><li>Maintained operational databases and built dashboards and performance reports.</li></ul>
+    <ul lang="es"><li>Mantuve bases de datos operativas y construí dashboards y reportes de desempeño.</li></ul>
+    <ul class="chips"><li><img src="assets/img/tech/azuresqldatabase.svg" alt="" width="16" height="16" loading="lazy">SQL</li><li><img src="assets/img/tech/powerbi.svg" alt="" width="16" height="16" loading="lazy">Power BI</li><li>SAP</li></ul>
+  </div>
+</details>
+</section>
+</div>
+</div>
+</main>
+
+<footer class="footer wide">
+  <p lang="en">© 2026 Facundo Allia Fernandez. Logos belong to their owners and only identify where I have worked or studied.</p>
+  <p lang="es">© 2026 Facundo Allia Fernandez. Los logos pertenecen a sus dueños y solo identifican dónde trabajé o estudié.</p>
+</footer>
+<script src="assets/js/site.js"></script>
 </body>
 </html>
